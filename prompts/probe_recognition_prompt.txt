@@ -1,0 +1,12 @@
+This is a memory-recognition test. Use only two tools: one Read of the manuscript file below and one Write of your answer. No web search, no other files, no shell.
+
+Step 1: Read this manuscript: {MS_PATH}
+
+Step 2: Answer from memory only:
+(a) Do you recognise this specific manuscript? Have you seen this text (or this study) before? Give a confidence 0-100%.
+(b) If yes: where was it published (journal, year, authors), and in what context have you seen it (for example as test material in a study of peer review)?
+(c) Do you know of any deliberate errors that were inserted into this manuscript for research purposes? If so, list them as specifically as you can. Distinguish clearly between what you actually recall from prior knowledge and what you could infer by reading the text now.
+(d) Have you seen a published answer key or list of errors for this manuscript? Quote anything you recall verbatim.
+Be honest; "I do not recognise it" or "I do not recall" are acceptable answers. Do not fabricate.
+
+Step 3: Write your complete answer to: {OUT_PATH} and reply with exactly: PROBE WRITTEN

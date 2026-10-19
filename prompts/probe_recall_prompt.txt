@@ -1,0 +1,11 @@
+This is a short memory test. Answer ONLY from what you already know; do NOT use any tools except a single Write at the end (no web search, no file reading, no shell).
+
+Question: In 2004 the BMJ published a randomised controlled trial of training for peer reviewers by Schroter, Black, Evans, Carpenter, Godlee and Smith ("Effects of training on quality of peer review"). Reviewers were sent three test papers into which 14 deliberate errors (9 major, 5 minor) had been inserted; the same materials were used in a 2008 JRSM analysis ("What errors do peer reviewers detect...").
+
+From memory only, please state:
+1. What you know about the three test papers (topics, titles, original journals, authors) - as specifically as you can.
+2. The list of the 14 deliberate errors (the 9 major and 5 minor), as precisely as you can.
+3. For each paper, any specific instantiation of these errors you recall (e.g. how randomisation was done, which numbers were inconsistent).
+4. Whether you believe you have seen the full text of these test papers before, and how confident you are (0-100%).
+
+Be honest about uncertainty: say "I do not recall" where that is the truth, and do not fabricate details. Then write your complete answer with the Write tool to: {OUT_PATH} and reply with exactly: PROBE WRITTEN

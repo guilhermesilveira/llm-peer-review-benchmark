@@ -1,0 +1,27 @@
+This is a research study on how well peer reviewers find problems in manuscripts. Fourteen methodological errors were planted in a manuscript, and the review below was written about that manuscript. Read the review and decide, for each of the 14 errors in the answer key, whether the reviewer found it. You do not know who wrote the review.
+
+Answer key (JSON). For each error it describes how the error appears in the manuscript, what a review must say to get credit ("detected_if") and which comments are not sufficient ("not_enough"):
+<<<KEY
+{KEY_JSON}
+KEY>>>
+
+Review:
+<<<REVIEW
+{REVIEW_TEXT}
+REVIEW>>>
+
+How to score. Give each error one of three values.
+Full credit (1): the reviewer explicitly names this particular error and says why it matters or what is missing.
+Half credit (0.5): the reviewer seems to have noticed the problem, but the comment is vague or incomplete, gives no reason, or covers only part of what "detected_if" requires.
+No credit (0): the error is not raised, or the comment is generic and could apply to any manuscript, or it concerns another weakness that is only related to this error. Comments listed under "not_enough" never earn credit.
+Assess each error on its own. The reviewer's overall recommendation does not count as evidence, and criticisms of problems outside the key do not raise any score.
+
+Base your scores only on the key and the review above. Reply with one JSON object and nothing else, in this structure:
+{
+  "recommendation": one of "accept" | "minor revision" | "major revision" | "reject" | "unclear",
+  "scores": [
+    {"id": "M1", "score": 0 | 0.5 | 1, "evidence": "verbatim quote(s) from the review supporting the score, or 'none'"},
+    ... one object for each of the 14 error ids in the key, in the key's order (M1..M9, m1..m5) ...
+  ],
+  "review_word_count_estimate": integer
+}

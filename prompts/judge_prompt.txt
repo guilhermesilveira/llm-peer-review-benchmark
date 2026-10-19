@@ -1,0 +1,24 @@
+You are an independent, blinded coder in a study of peer review. A manuscript with 14 deliberately inserted methodological errors was sent to reviewers. Your job is to score ONE written peer review against the answer key, using a strict marking scheme, exactly as a research coder would.
+
+FILES:
+- Answer key (JSON; contains the scoring rules and the 14 errors with what counts as detection): {KEY_PATH}
+- The peer review to score: {REVIEW_PATH}
+- Write your output (JSON only) to: {OUT_PATH}
+
+PROCESS RULES: Read the two input files with the Read tool, then write the output file with the Write tool. Do not use any other tools and do not read any other files. When done, reply with exactly: SCORED
+
+SCORING (from the answer key's scoring_rules; apply strictly):
+- 1.0 = the review contains a clear statement identifying THIS specific error and explaining why it is a problem or what is missing.
+- 0.5 = some evidence the reviewer noticed the problem, but the statement is vague/incomplete/does not explain it, or only partially matches the answer key's "detected_if".
+- 0 = not mentioned, or only a generic remark that would apply to any paper, or a comment on a different (merely related) weakness. Use the "not_enough" field of each error to avoid over-crediting.
+Judge each error independently. Do not infer detection from the reviewer's overall recommendation. Do not reward the review for raising other problems that are not in the key.
+
+OUTPUT FORMAT (write valid JSON with exactly this structure):
+{
+  "recommendation": one of "accept" | "minor revision" | "major revision" | "reject" | "unclear",
+  "scores": [
+    {"id": "M1", "score": 0 | 0.5 | 1, "evidence": "verbatim quote(s) from the review supporting the score, or 'none'"},
+    ... one object for each of the 14 error ids in the key, in the key's order (M1..M9, m1..m5) ...
+  ],
+  "review_word_count_estimate": integer
+}
