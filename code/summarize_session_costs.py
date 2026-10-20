@@ -1,13 +1,13 @@
-"""Time and cost per review for the models added on 30 Sep 2026, measured in the main runs themselves.
+"""Recorded time, tokens and billed cost for the API reviews and Opus 5.5 sessions.
 
 OpenRouter models: cost is OpenRouter's billed cost per request (usage.cost in each log); time is the wall-clock
-duration of the request as printed by run_open_models.py (run_logs/*.log). Requests that needed a retry are left out
+duration of the request as printed by run_api_reviews.py (run_logs/*.log). Requests that needed a retry are left out
 of the timing (their printed time includes the failed attempts and back-off), but their cost is the billed cost of the
 successful request. Requests that failed in one pass and succeeded at the first attempt of a later pass are timed from
 that successful request. Opus 5.5: cost at list price and duration as reported by Claude Code for each session
-(_claude_cli_runs/exp*/manifest.json, field "audit").
-Statistics are over the 12 reviews of the error-seeded 2026 trials, as in Supplementary Table 2.
-Writes data/cost_time_new_models.json.   Run: python3 code/cost_time_new_models.py
+(logs/claude_code_runs_opus55/exp*/manifest.json, field "audit").
+Statistics are over the 12 reviews of the error-seeded 2026 trials, as in Supplementary Table 3.
+Writes data/cost_time_new_models.json.   Run: python3 code/summarize_session_costs.py
 """
 import glob, json, os, re, statistics as st
 

@@ -1,8 +1,8 @@
 """Summarise the timing run (data/timing_run/): one fresh Claude Code session per original Anthropic model and
-error-seeded 2026 manuscript, run with code/run_claude_cli.py (same prompt and settings as the reviews, effort max).
+error-seeded 2026 manuscript, run with code/run_claude_reviews.py (same prompt and settings as the reviews, effort max).
 Cost (list price), duration and tokens are read from the final 'result' record of each session transcript
 (data/timing_run/exp2/logs/<id>.jsonl). Writes data/timing_run/timing_summary.json.
-Run: python3 code/timing_summary.py
+Run: python3 code/summarize_timing.py
 """
 import json, os, statistics as st
 

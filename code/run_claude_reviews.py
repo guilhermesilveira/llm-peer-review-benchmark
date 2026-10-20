@@ -11,9 +11,9 @@ This follows Option A of CLEAN_RERUN_INSTRUCTIONS.md, so no project note can rea
 A context probe (--probe) records what a session with exactly these settings can see, as evidence for the audit.
 
 Usage (from the repo root, with the Claude Code CLI installed and logged in):
-  python3 code/run_claude_cli.py --probe
-  python3 code/run_claude_cli.py --exp 1 --model claude-opus-5-5 --key opus55 --reps 4 --concurrency 4
-  python3 code/run_claude_cli.py --exp 2 --model claude-opus-5-5 --key opus55 --reps 4 --controls --concurrency 4
+  python3 code/run_claude_reviews.py --probe
+  python3 code/run_claude_reviews.py --exp 1 --model claude-opus-5-5 --key opus55 --reps 4 --concurrency 4
+  python3 code/run_claude_reviews.py --exp 2 --model claude-opus-5-5 --key opus55 --reps 4 --controls --concurrency 4
 Outputs: <workdir>/exp{N}/out/<id>.md (review), <workdir>/exp{N}/logs/<id>.jsonl (full stream-json transcript incl.
 tool calls and usage), <workdir>/exp{N}/manifest.json with a per-session tool audit. Re-running skips finished jobs.
 """

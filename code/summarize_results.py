@@ -1,8 +1,9 @@
-"""Every number quoted in the text of manuscript v7 that is not already a field of results.json / results_v2.json.
+"""Summarize the results cited in the current manuscript.
 
-Reads data/results.json, data_original/results.json, data/results_v2.json and the judge outputs; writes
-data/facts_v7.json and prints a readable summary. Run after analyze.py, analyze_original.py and analyze_v2.py:
-  python3 code/facts_v7.py
+Reads data/results.json, data_original/results.json, data/results_v2.json and the
+original-judge outputs. Writes data/facts_v7.json, using the archived filename.
+Run after aggregate_scores.py, aggregate_historical_scores.py and analyze_primary.py:
+  python code/summarize_results.py
 """
 import json, os, glob, collections, statistics as st
 import numpy as np
@@ -10,9 +11,8 @@ from scipy import stats
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ERR = ["M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9", "m1", "m2", "m3", "m4", "m5"]
-ORIG7 = ["haiku", "sonnet", "opus", "fable", "gpt54mini", "gpt54", "gpt55"]
-NEW8 = ["opus55", "gpt61sol", "gpt6luna", "gemini38fl", "kimik3", "dsv4pro", "qwen38_27b", "gptoss120b"]
-ALL = ORIG7 + NEW8
+ALL = ["haiku", "sonnet", "opus", "fable", "gpt54mini", "gpt54", "gpt55",
+       "opus55", "gpt61sol", "gpt6luna", "gemini38fl", "kimik3", "dsv4pro", "qwen38_27b", "gptoss120b"]
 OPEN = ["kimik3", "dsv4pro", "qwen38_27b", "gptoss120b"]
 HUMAN_TOTAL = 3.29
 
@@ -44,11 +44,7 @@ F = {}
 for tag, R, base in (("orig", R1, os.path.join(ROOT, "data_original")), ("y2026", R2, os.path.join(ROOT, "data"))):
     rows = R["rows"]; S = R["summary"]
     ids_all = [r["id"] for r in rows]
-    ids_new = [r["id"] for r in rows if r["model"] in NEW8]
-    ids_old = [r["id"] for r in rows if r["model"] in ORIG7]
-    f = {"agreement_all": agreement(judge_pairs(base, "judgements", ids_all)),
-         "agreement_orig7": agreement(judge_pairs(base, "judgements", ids_old)),
-         "agreement_new8": agreement(judge_pairs(base, "judgements", ids_new))}
+    f = {"agreement_all": agreement(judge_pairs(base, "judgements", ids_all))}
     per = {}
     for m in ALL:
         R_ = [r for r in rows if r["model"] == m]
@@ -70,8 +66,6 @@ for tag, R, base in (("orig", R1, os.path.join(ROOT, "data_original")), ("y2026"
     mw = [per[m]["words"] for m in ALL]; mt = [per[m]["total_mean"] for m in ALL]
     rho, p = stats.spearmanr(mw, mt)
     f["length_rho_15_models"] = {"rho": round(rho, 2), "p": round(p, 3)}
-    rho7, p7 = stats.spearmanr([per[m]["words"] for m in ORIG7], [per[m]["total_mean"] for m in ORIG7])
-    f["length_rho_orig7"] = {"rho": round(rho7, 2), "p": round(p7, 3)}
     within = {}
     for m in ALL:
         R_ = [r for r in rows if r["model"] == m]
@@ -99,10 +93,7 @@ F["controls"] = {"per_model": ctl, "n_reviews": len(crow), "credited_total": sum
                  "item_observations": 14 * len(crow), "full": full, "partial": partial,
                  "credited_by_item": dict(items.most_common()),
                  "never_credited": [e for e in ERR if items[e] == 0],
-                 "recs_all": dict(collections.Counter(r["rec"] for r in crow)),
-                 "credited_orig7": sum(per_model_items[m] for m in ORIG7), "credited_new8": sum(per_model_items[m] for m in NEW8),
-                 "credits_by_item_orig7": dict(collections.Counter(e for r in crow if r["model"] in ORIG7 for e, v in r["scores"].items() if v >= 0.5)),
-                 "credits_by_item_new8": dict(collections.Counter(e for r in crow if r["model"] in NEW8 for e, v in r["scores"].items() if v >= 0.5))}
+                 "recs_all": dict(collections.Counter(r["rec"] for r in crow))}
 
 # sensitivity / specificity table from the clustered analysis
 F["sens_spec"] = {m: {"sens_orig": V2["exp1"][m]["sens_all"], "sens_orig_ci": V2["exp1"][m]["sens_all_ci"],
@@ -115,9 +106,9 @@ json.dump(F, open(os.path.join(ROOT, "data", "facts_v7.json"), "w"), indent=1)
 # ---------------------------------------------------------------- readable summary
 for tag in ("orig", "y2026"):
     f = F[tag]
-    print(f"\n=== {tag}: agreement all {f['agreement_all']}, new8 {f['agreement_new8']}")
+    print(f"\n=== {tag}: agreement {f['agreement_all']}")
     print(f"reviews {f['n_reviews']}, at or below human mean: {f['n_reviews_le_human']}, lowest {f['lowest_review']}")
-    print(f"length rho 15 models {f['length_rho_15_models']}, orig7 {f['length_rho_orig7']}")
+    print(f"length rho 15 models {f['length_rho_15_models']}")
     for m in sorted(ALL, key=lambda m: f["per_model"][m]["total_mean"]):
         p = f["per_model"][m]
         print(f"  {m:11s} tot {p['total_mean']:5.2f} [{p['total_min']:.2f}-{p['total_max']:.2f}] ge13 {p['n_ge13']:2d} words {p['words']:5d} recs {p['recs']} byPaperMajor {p['by_paper_major']}")

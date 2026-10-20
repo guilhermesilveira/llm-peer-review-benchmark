@@ -1,11 +1,11 @@
 """Copy the Codex (OpenAI model) reviews into the data folders, extend the manifests, and build a tool-use audit
 from the Codex event logs.
 
-  python code/integrate_codex_jobs.py --exp 1   -> data_original/reviews/goreview_XXX.md, data_original/manifest.json (+entries),
+  python code/collect_codex_reviews.py --exp 1   -> data_original/reviews/goreview_XXX.md, data_original/manifest.json (+entries),
                                                   data_original/codex_tool_audit.json
-  python code/integrate_codex_jobs.py --exp 2   -> data/reviews/greview_XXX.md, data/controls/reviews/gcontrol_XX.md,
+  python code/collect_codex_reviews.py --exp 2   -> data/reviews/greview_XXX.md, data/controls/reviews/gcontrol_XX.md,
                                                   data/manifest.json, data/control_manifest.json, data/codex_tool_audit.json
-Model keys used in the manifests: gpt-5.5 -> gpt55, gpt-5.4 -> gpt54, gpt-5.4-mini -> gpt54mini (labels in analyze.py).
+Model keys used in the manifests: gpt-5.5 -> gpt55, gpt-5.4 -> gpt54, gpt-5.4-mini -> gpt54mini (labels in aggregate_scores.py).
 Safe to re-run: existing manifest entries are not duplicated; review files are overwritten from the job folder.
 """
 import argparse, json, os, shutil, re

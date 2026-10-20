@@ -1,16 +1,12 @@
-#!/usr/bin/env python3
-"""
-Reanalysis for the NEJM AI submission.
+"""Primary analyses for the 15-model peer-review benchmark.
 
-Adds to analyze.py:
-  1. Item-level sensitivity (error-seeded) and specificity (clean controls).
-  2. Bootstrap clustered at the manuscript level, not the review level.
-  3. Priming check: detection in sessions that referenced the experiment context
-     versus sessions that did not, within model.
-  4. Criticism volume: distinct numbered points per review.
-  5. Corrected human comparator (untrained control group of Schroter 2008).
+Reads the historical and 2026 review manifests, original-judge scores and control scores.
+Calculates mean scores, sensitivity, specificity, manuscript-clustered bootstrap intervals
+and within-manuscript permutation comparisons. The human comparator is the untrained
+control group of Schroter et al. (2008), weighted by the number of reviews per paper.
 
-Run from the project root:  python3 code/analyze_v2.py
+Writes data/results_v2.json, using the filename supplied in Supplementary Data 1.
+Run from the repository root: python code/analyze_primary.py
 """
 
 import json, os, re, collections
@@ -29,8 +25,8 @@ LABEL = {"haiku": "Haiku 4.5", "sonnet": "Sonnet 5", "opus": "Opus 5", "fable": 
          "gpt54mini": "GPT-5.4 mini", "gpt54": "GPT-5.4", "gpt55": "GPT-5.5"}
 ANTHROPIC = {"haiku", "sonnet", "opus", "fable"}
 
-# Added 30 Sep 2026. They are analysed in a second pass with their own random seed, so every number for the
-# original seven models (first pass, original seed) is reproduced exactly as published.
+# Preserve the archived two-pass random seeds and draw order so confidence intervals
+# and permutation results reproduce the recorded analysis of all 15 models.
 MODELS_NEW = ["opus55", "gpt61sol", "gpt6luna", "gemini38fl", "kimik3", "dsv4pro", "qwen38_27b", "gptoss120b"]
 LABEL.update({"opus55": "Opus 5.5", "gpt61sol": "GPT-6.1 Sol", "gpt6luna": "GPT-6 Luna",
               "gemini38fl": "Gemini 3.8 Flash", "kimik3": "Kimi K3", "dsv4pro": "DeepSeek V4 Pro",
@@ -356,9 +352,8 @@ def main():
         "minor_weighted": round(sum(v["minor"] * v["n"] for v in HUMAN_CONTROL.values()) / n, 2),
         "major_unweighted": round(np.mean([v["major"] for v in HUMAN_CONTROL.values()]), 2),
         "minor_unweighted": round(np.mean([v["minor"] for v in HUMAN_CONTROL.values()]), 2),
-        "note": ("Manuscript currently uses 2.78 / 0.95, the all-groups means, which "
-                 "include the two trained arms. Figure 1C already uses the untrained "
-                 "control group, so the two are inconsistent."),
+        "note": ("Untrained control-group reviews from Schroter et al. (2008), Table 4; "
+                 "the manuscript uses review-weighted major- and minor-error means."),
     }
 
     with open(os.path.join(ROOT, "data", "results_v2.json"), "w") as f:

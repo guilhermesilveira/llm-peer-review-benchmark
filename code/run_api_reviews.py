@@ -7,10 +7,10 @@ in the Experiment 2 Codex runs (prompts/reviewer_prompt_api_inline.txt differs f
 only in asking for the review as the reply instead of as a file).
 
 Usage (from the repo root; needs OPENROUTER_API_KEY in the environment or in a .env file at the repo root):
-  python3 code/run_open_models.py --exp 1 --models kimik3 dsv4pro gptoss120b qwen38_27b --reps 4 --concurrency 4
-  python3 code/run_open_models.py --exp 2 --models ... --reps 4 --controls --concurrency 4
-  python3 code/run_open_models.py --integrate --exp 1     (copy reviews into data_original/, extend the manifest)
-  python3 code/run_open_models.py --integrate --exp 2     (data/ and data/controls/, both manifests)
+  python3 code/run_api_reviews.py --exp 1 --models kimik3 dsv4pro gptoss120b qwen38_27b --reps 4 --concurrency 4
+  python3 code/run_api_reviews.py --exp 2 --models ... --reps 4 --controls --concurrency 4
+  python3 code/run_api_reviews.py --integrate --exp 1     (copy reviews into data_original/, extend the manifest)
+  python3 code/run_api_reviews.py --integrate --exp 2     (data/ and data/controls/, both manifests)
 Outputs: <workdir>/exp{N}/out/<id>.md (review text), <workdir>/exp{N}/logs/<id>.json (full API response incl. usage
 and, when the provider returns it, the reasoning trace), <workdir>/exp{N}/manifest.json. Re-running skips finished jobs.
 """

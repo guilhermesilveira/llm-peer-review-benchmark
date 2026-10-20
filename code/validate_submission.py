@@ -1,16 +1,19 @@
 from pathlib import Path
-import json,csv,re,statistics,sys,hashlib
+import argparse,json,csv,re,statistics,sys,hashlib
 import numpy as np
 from scipy.stats import spearmanr
 from docx import Document
 
 BASE=Path(__file__).resolve().parents[1]
+parser=argparse.ArgumentParser(description='Check the current manuscript datasets and optional supplementary table.')
+parser.add_argument('--supplement',type=Path,help='Path to Supplementary_information.docx for the Table 2 check')
+args=parser.parse_args()
 # When invoked from the preparation workspace, point at the assembled release.
 if not (BASE/'data/manifest.json').exists():
-    raise SystemExit('Run this validator from code/ in the extracted Supplementary Data 1 archive.')
+    raise SystemExit('Copy data/, data_original/ and additional_judges/ from Supplementary Data 1 beside code/ before running this validator.')
 DEST=BASE/'validation';DEST.mkdir(exist_ok=True)
 ITEMS=[f'M{i}' for i in range(1,10)]+[f'm{i}' for i in range(1,6)]
-errors=[];report={'source_manuscript':'manuscript_v17.docx','validation':'Archived model scores and manuscript consistency; independent human scoring was not performed.'}
+errors=[];report={'study':'Current 15-model manuscript benchmark','validation':'Archived model scores and manuscript consistency; independent human scoring was not performed.'}
 def read(p):return json.loads(p.read_text())
 def scores(p):return {x['id']:float(x['score']) for x in read(p)['scores']}
 records=[]
@@ -83,7 +86,9 @@ for name in ['gpt61sol_j5','jev_normal','decision1_normal']:
 # Export the three submission tables as CSV, then compare every numerical row in Table 2.
 tables=BASE/'tables';tables.mkdir(exist_ok=True)
 outroot=BASE.parents[1]
-supp=outroot/'02_supplementary/Supplementary_information.docx'
+supp=args.supplement or outroot/'02_supplementary/Supplementary_information.docx'
+if args.supplement and not supp.exists():
+    raise SystemExit(f'Supplementary document not found: {supp}')
 if supp.exists():
     d=Document(supp)
     for i,t in enumerate(d.tables,1):

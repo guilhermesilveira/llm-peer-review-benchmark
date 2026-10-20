@@ -4,8 +4,8 @@ Judges: J1 = Fable 5, J2 = Opus 5 (same as the Claude runs). Reviews of the same
 four; the instruction file is the batch judge prompt with the FILES section filled in (paths inside the repository).
 Each judge session is then launched with a two-line prompt: "Read <instruction file> and follow it exactly."
 
-  python code/make_judge_batches.py --exp 1            -> judge files for data_original (goreview_*)
-  python code/make_judge_batches.py --exp 2            -> judge files for data (greview_*) and controls (gcontrol_*)
+  python code/prepare_judge_batches.py --exp 1            -> judge files for data_original (goreview_*)
+  python code/prepare_judge_batches.py --exp 2            -> judge files for data (greview_*) and controls (gcontrol_*)
 Output: <workdir>/judge/exp{N}/batch_<k>_J{1,2}.txt and a listing printed to stdout.
 """
 import argparse, glob, json, os

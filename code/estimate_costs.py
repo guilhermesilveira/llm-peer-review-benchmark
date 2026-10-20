@@ -1,4 +1,4 @@
-"""Estimated cost of one review for all 15 models, at list prices (manuscript v8, Supplementary Table 2).
+"""Estimated cost of one review for all 15 models, at list prices (Supplementary Table 3).
 
 One uniform estimate for every model, so that models run through different software can be compared:
   cost = 10,000 input tokens x input price + output tokens x output price
@@ -6,7 +6,7 @@ One uniform estimate for every model, so that models run through different softw
   8,400 to 11,800 tokens depending on the paper).
 - Output tokens include the model's reasoning. They are the recorded means over the 12 error-seeded 2026 reviews
   (data/cost_time_new_models.json, models run through OpenRouter and Opus 5.5) or over the three timed sessions
-  (data/timing_run/timing_summary.json, the four first-round Anthropic models). The three GPT-5 models ran through
+  (data/timing_run/timing_summary.json, Haiku 4.5, Sonnet 5, Opus 5 and Fable 5). The three GPT-5 models ran through
   Codex, which did not record tokens: their output is estimated from review length (1.3 tokens per word) times the
   median ratio of total output to visible review tokens among the 12 recorded models.
 - Prices are the developers' list prices of September 2026 (USD per million tokens). For the open-weight models the
@@ -14,7 +14,7 @@ One uniform estimate for every model, so that models run through different softw
   host gpt-oss-120b, so a typical host price is used.
 Minutes per review are the recorded means (not recorded for the GPT-5 models). Words per review are the main-experiment
 means for every model (the ratio above uses the word counts of the sessions whose tokens were recorded).
-Writes data/cost_estimates_v8.json.   Run: python3 code/cost_estimates_v8.py
+Writes data/cost_estimates_v8.json.   Run: python3 code/estimate_costs.py
 """
 import json, os, statistics as st
 

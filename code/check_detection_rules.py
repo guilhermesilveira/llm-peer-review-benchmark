@@ -1,17 +1,18 @@
-"""Checks for manuscript v17 (15 Oct 2026).
+"""Compare the primary and alternative binary detection rules.
 
-1. Human per-error and overall binary detection rate from Schroter et al. 2008 Table 5 (untrained controls),
-   with the corrected m4 value for paper 3 (7%, not 10%).
-2. Controls and sensitivity under the primary rule (mean of the two judges >= 0.5), to reproduce the published numbers.
-3. The same under the rule used for the published human per-error rates (either judge >= 0.5).
-Writes data/checks_v17.json. Run from the project root: python3 code/analyze_v17_checks.py
+The primary rule requires the mean of Fable 5 and Opus 5 scores to be at least 0.5.
+The alternative counts detection if either judge awards at least 0.5. Also reconstructs
+human detection rates from the untrained group in Schroter et al. (2008), Table 5.
+
+Writes data/checks_v17.json, using the archived filename.
+Run: python code/check_detection_rules.py
 """
 import json, os, sys
 import numpy as np
 from scipy.stats import spearmanr
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import analyze as A          # HUMAN_PER_ERROR (corrected m4)
-import analyze_v2 as V       # data loading
+import aggregate_scores as A          # HUMAN_PER_ERROR (corrected m4)
+import analyze_primary as V       # data loading
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 N = [173, 162, 156]          # untrained control reviews, papers 1-3 (Schroter 2008, Table 4)

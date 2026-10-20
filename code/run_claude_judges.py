@@ -1,14 +1,10 @@
-"""Run the judge sessions written by make_judge_batches.py in parallel, as fresh Claude Code CLI sessions.
+"""Score prepared judge batches in fresh Claude Code sessions.
 
-Same judges and instructions as run_judges_claude_cli.sh (J1 = Fable 5, J2 = Opus 5; sessions may only Read and Write).
-The instruction text of the batch file is given in the prompt itself: since mid-2026 the one-line prompt "Read <batch file>
-and follow it exactly." trips Fable 5's cyber safeguard, and Claude Code then silently continues the session with another
-model (claude-opus-4-8). Any session in which such a model fallback occurs is rejected: its outputs are moved to
-<judge dir>/rejected_fallback/ and the batch is reported as FALLBACK. Differences: sessions run concurrently, start from a minimal
-environment with no settings, memory or MCP servers (as in run_claude_cli.py), and every output is checked to be valid
-JSON with the 14 scores in the key's order. Batches whose outputs all exist and are valid are skipped.
+J1 is Fable 5 and J2 is Opus 5. Sessions can only Read and Write, start with a minimal
+environment, and reject outputs from a different served model. Existing valid batches
+are skipped when resuming a run.
 
-Usage:  python3 code/run_judges_cli.py <judge dir> [<judge dir> ...] --concurrency 8
+Usage: python code/run_claude_judges.py <judge dir> [<judge dir> ...] --concurrency 8
 """
 import argparse, glob, json, os, re, subprocess, time
 from concurrent.futures import ThreadPoolExecutor, as_completed

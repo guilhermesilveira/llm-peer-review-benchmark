@@ -9,9 +9,9 @@ A second prompt (prompts/judge_prompt_api_inline_reworded.txt) states the same r
 fixed subset to test how much the scores depend on the wording of the judge instructions.
 
 Usage (repo root; needs OPENROUTER_API_KEY in the environment or in .env):
-  python3 code/run_judge_open.py --prompt main --concurrency 8           # all 405 reviews
-  python3 code/run_judge_open.py --prompt reworded --concurrency 8       # 90-review subset
-  python3 code/run_judge_open.py --prompt main --limit 5                 # pilot
+  python3 code/run_api_judge.py --prompt main --concurrency 8           # all 405 reviews
+  python3 code/run_api_judge.py --prompt reworded --concurrency 8       # 90-review subset
+  python3 code/run_api_judge.py --prompt main --limit 5                 # pilot
 Outputs: _judge_runs_J3/<judge>_<prompt>/judgements/<id>__J3.json, .../logs/<id>.json (full API response with usage
 and cost), .../manifest.json. Re-running skips finished jobs. Nothing in data/ is changed.
 """

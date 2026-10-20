@@ -7,8 +7,8 @@ default system prompt (a coding-agent persona). `--ignore-user-config` keeps plu
 app out of the session; `--ephemeral` persists nothing; `--ignore-rules` disables local exec policies.
 
 Usage (from the repo root):
-  python code/run_codex_jobs.py --exp 1 --models gpt-5.5:xhigh gpt-5.4:xhigh gpt-5.4-mini:high --reps 4 --concurrency 3
-  python code/run_codex_jobs.py --exp 2 --models ... --reps 4 --controls --concurrency 3
+  python code/run_codex_reviews.py --exp 1 --models gpt-5.5:xhigh gpt-5.4:xhigh gpt-5.4-mini:high --reps 4 --concurrency 3
+  python code/run_codex_reviews.py --exp 2 --models ... --reps 4 --controls --concurrency 3
   add --dry-run to only build the job folder and manifest.
 Outputs go to <workdir>/exp{N}/out/<id>.md, event logs to <workdir>/exp{N}/logs/<id>.jsonl, manifest to <workdir>/exp{N}/manifest.json.
 The workdir defaults to a neutral folder in the session scratchpad; pass --workdir to change it.

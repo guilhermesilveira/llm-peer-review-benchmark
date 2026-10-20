@@ -5,7 +5,15 @@ __pycache__/
 .env.*
 .DS_Store
 results/
+figures/
+validation/
 data/
 data_original/
 additional_judges/
+logs/
+_*runs*/
 *.zip
+*.csv
+*.jsonl
+*.docx
+*.pdf
