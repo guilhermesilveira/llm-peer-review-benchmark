@@ -1,4 +1,4 @@
-"""Supplementary Fig. 4 (v17): two judges from other developers give nearly the same scores.
+"""Supplementary Fig. 1 (v17): two judges from other developers give nearly the same scores.
 
 v17 (15 Oct 2026) adds GPT-6.1 Sol (OpenAI; run by D. Brian through Azure Foundry, scores in
 _judge_runs_J4_gpt61sol/gpt61sol_scores.json) next to Kimi K3 in panels a-c. Panel d is unchanged.
@@ -10,7 +10,7 @@ c  third judge minus original judges, summed score per review, by model (mean, 9
 d  Kimi K3 with its original vs reworded instructions, summed score per review (90 reviews)
 
 Inputs: data*/judgements (J1, J2), _judge_runs_J3/kimik3_{main,reworded}/judgements (J3).
-Writes figures/SupplFigure4_v15.png and .pdf
+Writes figures/SupplFigure1_v17.png and .pdf
 """
 import json, os, statistics as st
 import numpy as np
@@ -193,6 +193,6 @@ for a in fig.axes:
     for art in list(a.lines) + list(a.collections):
         art.set_clip_on(False)
 for ext in ("png", "pdf"):
-    fig.savefig(os.path.join(OUT, f"SupplFigure4_{V}.{ext}"), dpi=300, bbox_inches="tight", facecolor="white")
-json.dump(facts, open(os.path.join(OUT, f"SupplFigure4_{V}_facts.json"), "w"), indent=1)
+    fig.savefig(os.path.join(OUT, f"SupplFigure1_{V}.{ext}"), dpi=300, bbox_inches="tight", facecolor="white")
+json.dump(facts, open(os.path.join(OUT, f"SupplFigure1_{V}_facts.json"), "w"), indent=1)
 print(json.dumps(facts, indent=1))
