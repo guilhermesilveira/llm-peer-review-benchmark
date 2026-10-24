@@ -46,11 +46,10 @@ python code/validate_submission.py --supplement /path/to/Supplementary_informati
 
 These scripts document the collection procedure. Running model sessions requires the relevant command-line client or API credentials and incurs new model calls. Reproducing saved-data analyses does not require them.
 
+The test manuscripts and the scripts that inserted the errors are not distributed, because of the licences of the source articles. Supplementary Table 1 and the change list in Supplementary Data 1 describe every edit; the scripts are available from the corresponding author on request.
+
 | Script | Purpose |
 | --- | --- |
-| `seed_stroke_errors.py` | Generate the error-seeded stroke manuscript from control N |
-| `seed_arthritis_errors.py` | Generate the error-seeded arthritis manuscript from control I |
-| `seed_heart_failure_errors.py` | Generate the error-seeded heart-failure manuscript from control M |
 | `build_2026_answer_keys.py` | Build the 2026 answer keys |
 | `build_historical_answer_keys.py` | Build the historical answer keys from the official error descriptions |
 | `prepare_judge_batches.py` | Prepare the original judges' blinded review batches |

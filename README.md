@@ -2,7 +2,7 @@
 
 Code and prompts for **Large language models detect methodological errors that human peer review misses in randomized clinical trials**.
 
-Dominikus Brian and Xavier Isidro Pereira Hernández contributed equally. The other authors are Hao Yin and Ruslan Rust. The preprint is being prepared for submission.
+Dominikus Brian and Xavier Isidro Pereira Hernández contributed equally. The other authors are Hao Yin, Jeffrey Koury and Ruslan Rust. The preprint is being prepared for submission.
 
 The benchmark tests 15 models on three historical trial manuscripts and three trials published in 2026. It includes 180 reviews of historical manuscripts, 180 reviews of error-seeded 2026 manuscripts and 45 control reviews. This repository contains the code and prompts for the current manuscript. Study data are distributed separately with the manuscript.
 
@@ -43,4 +43,4 @@ See the [code guide](code/README.md) for statistical analyses, validation, study
 
 ## License and citation
 
-Code is MIT licensed. See [LICENSE](LICENSE) and [CITATION.cff](CITATION.cff). Third-party study materials retain their original rights.
+Code is MIT licensed. See [LICENSE](LICENSE) and [CITATION.cff](CITATION.cff). The test manuscripts are not included because of the licences of the source articles.
