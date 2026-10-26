@@ -1,6 +1,6 @@
 # LLM peer review benchmark
 
-Code and prompts for **Large language models detect methodological errors that human peer review misses in randomized clinical trials**.
+Code and prompts for **Large language models detect methodological errors that human peer review misses in clinical trials**.
 
 Dominikus Brian and Xavier Isidro Pereira Hernández contributed equally. The other authors are Hao Yin, Jeffrey Koury and Ruslan Rust. The preprint is being prepared for submission.
 
