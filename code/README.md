@@ -59,9 +59,10 @@ The test manuscripts and the scripts that inserted the errors are not distribute
 | `run_api_reviews.py` | Run the seven API-accessed reviewer models |
 | `run_claude_judges.py` | Run the two original Claude judges |
 | `run_api_judge.py` | Run Kimi K3 with original or reworded scoring instructions |
+| `run_memory_probes.py` | Run the recall and recognition memory probes of Haiku 4.5, Sonnet 5, Fable 5, Opus 5 and Opus 5.5 in isolated sessions |
 
 ## Recorded prompts and judge labels
 
-Prompt files retain their recorded wording. Reviewer variants reflect the historical or 2026 manuscripts and the software environment. Judge variants cover individual reviews, batches, inline API requests and reworded instructions. Recall and recognition prompts are separate memory probes.
+Prompt files retain their recorded wording. Reviewer variants reflect the historical or 2026 manuscripts and the software environment. Judge variants cover individual reviews, batches, inline API requests and reworded instructions. Recall and recognition prompts are separate memory probes; `probe_coding_rules.md` defines how their answers were coded for Supplementary Figure 3.
 
 The combined score table names all six judges explicitly. J3 means Kimi K3 in the Kimi archive. In the separate decision-comparison archive, J3 means Jev, J4 means Microsoft Decision-1 and J5 means GPT-6.1 Sol. Supplementary Figure 1 compares the four judges that produced supporting text; the saved-score reproduction script also summarizes the two categorical decision models.
