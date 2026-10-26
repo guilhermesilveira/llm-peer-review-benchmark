@@ -389,7 +389,7 @@ PROBE_COLS_B = [("Recognized the source trial", 3), ("Recalled result values", 3
 # b, trials published in 2026 (recognition probe, error-inserted version shown). None = not applicable (NA): the
 # error-inserted versions were made for this study and never published. Fable 5 gave the right journal for two trials
 # but the year as 2025; Opus 5 and Opus 5.5 named no journal from memory. Fable 5 recalled that the heart-failure
-# trial was positive, without values (counted 0).
+# trial was positive, without values (counted 0). NA is explained in the figure legend.
 PROBE_B = {"haiku":  [0, 0, 0, None, None],
            "sonnet": [0, 0, 0, None, None],
            "fable":  [3, 0, 0, None, None],
@@ -432,7 +432,5 @@ for ax, xs, cols, vals, sep, title, lab in [
             color=INK2)
     ax.text(-0.2 if ax is axA else -0.08, 1.15, lab, transform=ax.transAxes, fontsize=10, fontweight="bold")
     ax.text(0.5, 1.15, title, transform=ax.transAxes, ha="center", fontsize=8)
-fig.text(0.655, -0.08, "NA, not applicable: the error-inserted 2026\nversions were made for this study and\nnever published.",
-         fontsize=7, color=INK2, ha="left", va="top")
 save(fig, "SupplFigure3")
 print("wrote", OUT)
