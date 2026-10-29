@@ -1,0 +1,118 @@
+{
+ "scoring_rules": "Schroter et al. 2008 strict marking scheme. Score 1 = the review contains a clear statement that identifies THIS specific error AND explains why it is a problem (or what is missing). Score 0.5 = the review shows some evidence of having noticed the problem but the statement is vague, incomplete, or does not explain the issue (e.g. asks a related question without stating the error). Score 0 = not mentioned, or only a generic remark that would apply to any paper. Do NOT give credit for a comment about a different, merely related, weakness. Judge each error independently. Ignore how many other (non-listed) problems the review raises.",
+ "paper_title": "Three-year adjuvant icotinib vs placebo after adjuvant chemotherapy in resected stage II-IIIA EGFR-mutated lung adenocarcinoma, double-blind phase 3, China (paper P18)",
+ "errors": [
+  {
+   "id": "M1",
+   "class": "major",
+   "name": "Poor justification for conducting the study",
+   "instantiation": "The four-paragraph introduction (burden of lung cancer worldwide and in China; limited benefit of cisplatin-based adjuvant chemotherapy with a 5-year DFS of 39.4% and failed bevacizumab trials; frequency of EGFR mutations; the prior adjuvant EGFR-TKI trials RADIANT, ADJUVANT/CTONG1104, IMPACT, EVAN, EVIDENCE, ICOMPARE, CORIN, ICAPE and ICTAN with their DFS results; the uncertainty about the optimal duration of adjuvant EGFR-TKI treatment, mostly 1 to 2 years in previous studies, which this first 3-year trial was designed to address; the earlier icotinib evidence from ICOGEN, CONVINCE and EVIDENCE) was reduced to three sentences: NSCLC is the most common type of lung cancer and platinum-based adjuvant chemotherapy is standard for resected stage II–IIIA disease, 'Icotinib is a first-generation EGFR tyrosine kinase inhibitor (EGFR-TKI).', 'We therefore conducted a randomized, double-blind, placebo-controlled trial of three-year adjuvant icotinib versus placebo in patients with completely resected stage II-IIIA EGFR-mutated lung adenocarcinoma who had completed four cycles of adjuvant chemotherapy.' The Discussion was left unchanged, apart from spelling out 'National Medical Products Administration (NMPA)' at its first use there (the abbreviation had been defined in the deleted introduction).",
+   "detected_if": "Reviewer states that the introduction/rationale is inadequate: it does not review prior evidence on adjuvant EGFR-TKIs or on icotinib, does not explain why a 3-year treatment duration (rather than the 1 to 2 years studied before) or a placebo comparison after adjuvant chemotherapy was chosen, or fails to justify why this study was needed / what gap it fills.",
+   "not_enough": "Only saying the introduction is short, or asking for more references in general, without pointing to missing context/justification; only questioning the placebo comparator now that osimertinib is standard of care, without noting that the introduction lacks background or rationale."
+  },
+  {
+   "id": "M2",
+   "class": "major",
+   "name": "Biased randomisation procedure",
+   "instantiation": "The Pocock and Simon minimization with a computerized interactive web-based system was replaced by 'At each hospital, the site investigator assigned patients alternately to icotinib or placebo in the order in which they were enrolled, separately within each stratum (the first patient in a stratum to icotinib, the next to placebo, and so on).' The paper is still presented as a randomized trial ('Eligible patients were randomly assigned 1:1' in the abstract and methods, 'randomized' in the title) and as double-blind; the statement 'Treatment assignments were blinded to patients, clinicians, and study investigators' remains.",
+   "detected_if": "Reviewer states that alternation by the site investigator in order of enrolment is not true randomisation / is quasi-randomisation, is predictable or open to selection bias / lacks allocation concealment (and undermines the blinding), or that the trial should not be called randomised.",
+   "not_enough": "Only noting baseline imbalance (for example in sex) without linking it to the allocation method; only asking for more detail on randomisation; only questioning whether minimization is truly random (Pocock and Simon minimization through a central web-based system is described in the control version)."
+  },
+  {
+   "id": "M3",
+   "class": "major",
+   "name": "No sample size calculation reported",
+   "instantiation": "The sample size paragraph (assumed median DFS of 40 vs 22 months based on ADJUVANT/CTONG1104, HR 0.55, 45-month enrollment and 5-year follow-up, 112 patients / 89 DFS events, two-sided alpha 0.05, 80% power, 10% dropout, 124 patients) was replaced by 'We planned to enroll 124 patients (62 per group; protocol version 2.0).', and 'or primary endpoint assumptions' was removed from the sentence on the over-enrollment to 141 patients.",
+   "detected_if": "Reviewer states that no sample size or power calculation is reported / asks how the planned 124 patients (or the number of DFS events needed) were justified.",
+   "not_enough": "Only saying the sample is small, that subgroup analyses are underpowered, or criticising the enrollment beyond the planned 124 patients, without noting the absence of a sample size justification."
+  },
+  {
+   "id": "M4",
+   "class": "major",
+   "name": "Unknown reliability and validity of the outcome measures",
+   "instantiation": "The FACT-L (HRQoL, a secondary endpoint; described in the control version as a validated lung cancer-specific instrument) was replaced throughout (Procedures, Results, Statistical analysis) by 'a 20-item lung cancer quality-of-life questionnaire developed by the investigators for this trial, which yields a total score from 0 to 100 (higher scores indicating better quality of life) and five domain scores'; no information on validation, reliability or prior use is given, yet 'a reduction of ≥6 points' in the total score is called clinically significant. The reported results are unchanged (no significant between-group differences).",
+   "detected_if": "Reviewer states that the investigator-developed quality-of-life questionnaire is not validated / of unknown reliability and validity (for example that its psychometric properties or minimal important difference are not established), or asks why a validated instrument (e.g. FACT-L or EORTC QLQ-C30/LC13) was not used.",
+   "not_enough": "Generic remarks about HRQoL being a secondary or poorly reported outcome; questioning the ≥6-point threshold without noting that the instrument itself is unvalidated; comments only on how many patients completed the HRQoL assessments (104 of 135, the same in both versions); comments on RECIST or CTCAE (established measures)."
+  },
+  {
+   "id": "M5",
+   "class": "major",
+   "name": "Failure to analyse the data on an intention-to-treat basis",
+   "instantiation": "DFS and OS were analysed only in the per-protocol set: 'DFS and OS were analyzed in the PPS' (122 patients: 58 icotinib, 64 placebo), which excluded 13 treated patients (8 and 5) who discontinued study treatment (reasons no longer given, see m2) as well as the 6 randomized patients who received no study treatment; the Methods state 'An intention-to-treat analysis was not performed, because the PPS was considered to best reflect the effect of 3-year icotinib treatment as intended.' The full-analysis-set results (median DFS 48.2 vs 20.0 months, HR 0.54, 95% CI 0.34–0.87, p = 0.011) and every mention of the FAS were removed; the abstract, Results, Discussion and figure legends report the per-protocol result (51.4 vs 19.6 months, HR 0.50, 95% CI 0.30–0.82, p = 0.0061; the abstract HR is altered for M8), deaths are given as 16/58 and 16/64, and Table 1 now describes 'treated patients'. Safety and HRQoL are reported for all 135 treated patients.",
+   "detected_if": "Reviewer states that analysing DFS/OS only in the per-protocol set (122 patients; 13 treated patients excluded) instead of an intention-to-treat / full analysis set is inappropriate or biased (breaks randomisation, may inflate the treatment effect), and/or that the intention-to-treat analysis that was not performed should be reported.",
+   "not_enough": "Merely noting that 13 patients were excluded from the per-protocol set without criticising the analysis population; only criticising the exclusion of the 6 randomized patients who never received study treatment, or calling the analysis set a modified ITT and asking for all 141 randomized patients on that ground (a full analysis set of treated patients is used in the control version), without criticising the per-protocol restriction or the stated decision not to perform an ITT analysis; only noting that efficacy and safety denominators differ."
+  },
+  {
+   "id": "M6",
+   "class": "major",
+   "name": "Poor response rate / follow-up",
+   "instantiation": "Follow-up for the primary outcome is incomplete: 'Follow-up for DFS (tumor assessments until recurrence or the data cutoff) was completed in 42 of 58 patients (72.4%) in the icotinib group and 39 of 64 patients (60.9%) in the placebo group; the remaining 41 patients stopped attending scheduled imaging assessments before any recurrence was documented, and their DFS was censored at the date of the last tumor assessment' (about 66% overall, lower in the placebo group). DFS events are given as 33 and 35 (68). The control-version statements that all 135 patients were assessed by the IRC and that patients who discontinued treatment remained in follow-up for DFS and OS were removed; the loss to follow-up and possible informative censoring are not discussed anywhere (no sensitivity analysis, no limitation).",
+   "detected_if": "Reviewer states that about a third of patients (more in the placebo group: 60.9% vs 72.4% with complete follow-up) stopped imaging follow-up / were censored early, that this (differential, possibly informative) loss to follow-up threatens the validity of the primary DFS result, or that it is not addressed (no sensitivity analysis or discussion).",
+   "not_enough": "Only mentioning the per-protocol exclusion of 13 patients (that is M5); generic remarks about missing data; comments only on the HRQoL completion rate (104 of 135, the same in both versions) or on the immaturity of OS."
+  },
+  {
+   "id": "M7",
+   "class": "major",
+   "name": "Unjustified conclusions",
+   "instantiation": "The abstract conclusion now says icotinib 'significantly improved DFS and prolonged survival compared to placebo, with a manageable safety profile, and should replace osimertinib as the standard adjuvant treatment for all patients with completely resected EGFR-mutated non-small cell lung cancer, regardless of disease stage, ethnicity, or prior adjuvant chemotherapy'; the final conclusion says it 'significantly improved DFS and prolonged survival' and 'should therefore replace osimertinib as the standard of care for all patients with completely resected EGFR-mutated non-small cell lung cancer worldwide, including those with stage IB disease, non-Asian patients, and patients who have not received adjuvant chemotherapy'. OS did not differ (HR 0.84, 95% CI 0.39–1.81; p = 0.65), osimertinib was not a comparator, and only Chinese patients with stage II–IIIA adenocarcinoma after four cycles of chemotherapy were studied. The limitations on Chinese-only enrollment and immature OS, the caveat that no head-to-head study has compared first- and third-generation EGFR-TKIs, and the sentence restricting the evidence to Chinese patients in local practice were removed.",
+   "detected_if": "Reviewer states that the conclusions overreach the data: no OS benefit was shown (HR 0.84, p = 0.65), there was no comparison with osimertinib, and/or the trial (Chinese patients, stage II–IIIA adenocarcinoma, after adjuvant chemotherapy, placebo comparator) cannot support a recommendation for all resected EGFR-mutated NSCLC, stage IB, non-Asian patients, patients without adjuvant chemotherapy, or replacing osimertinib.",
+   "not_enough": "Only saying the wording should be softened or generic hedging advice unrelated to the survival claim or the over-generalisation; only criticising the cross-trial comparisons with ADAURA in the Discussion (present in both versions)."
+  },
+  {
+   "id": "M8",
+   "class": "major",
+   "name": "Discrepancy between data reported in the abstract and results",
+   "instantiation": "The abstract reports the DFS hazard ratio as '(hazard ratio [HR] 0.40, 95% CI 0.24–0.66; p < 0.001)'; the Results text and the Discussion report HR 0.50 (95% CI 0.30–0.82; p = 0.0061) for the same comparison (medians 51.4 vs 19.6 months in both places).",
+   "detected_if": "Reviewer points out that the abstract's DFS hazard ratio (0.40, 95% CI 0.24–0.66, p < 0.001) does not match the Results/Discussion (0.50, 95% CI 0.30–0.82, p = 0.0061), or otherwise identifies a mismatch between abstract and results figures.",
+   "not_enough": "Generic advice to check the abstract; only saying the abstract conclusion is not supported (that is M7)."
+  },
+  {
+   "id": "M9",
+   "class": "major",
+   "name": "Inconsistent numbers / denominators",
+   "instantiation": "The Results say '147 patients were enrolled and randomly assigned in a 1:1 ratio to receive either icotinib (n = 68) or placebo (n = 73)', but 68 + 73 = 141, 157 screened minus 16 not randomized = 141, the 60 + 81 patients enrolled after and before the amendment = 141, and the Methods say '141 patients were ultimately randomized'. Any-grade TEAEs in the placebo group are given as '31.9% (22/96)', whose group size is 69 (22/69 = 31.9%; 22/96 = 22.9%; Table 2 shows 22 (31.9%) with n = 69).",
+   "detected_if": "Reviewer states that participant numbers are inconsistent / do not add up (147 vs 141 randomized; 22/96 vs 69 in the placebo group) or that the numbers are difficult to reconcile.",
+   "not_enough": "Only asking for a CONSORT diagram (that is m2); only noting that DFS/OS (58/64) and safety (66/69) denominators differ (that is M5) or that DFS follow-up was incomplete (that is M6); only noting enrollment beyond the planned 124."
+  },
+  {
+   "id": "m1",
+   "class": "minor",
+   "name": "No ethics committee approval",
+   "instantiation": "The sentence 'The protocol and all amendments were reviewed and approved by the institutional review board or independent ethics committee at each participating hospital.' was removed (Declaration of Helsinki, Good Clinical Practice and written informed consent statements remain).",
+   "detected_if": "Reviewer states that ethics committee / IRB approval is not reported (or asks whether ethical approval was obtained).",
+   "not_enough": "Mentioning only informed consent, Helsinki/GCP compliance or the withheld registration identifier; generic remark that ethics should be considered (score 0); only questioning the ethics of a placebo control."
+  },
+  {
+   "id": "m2",
+   "class": "minor",
+   "name": "No explanations for ineligible or non-randomised cases / unclear participant flow",
+   "instantiation": "The reasons were removed for the 16 screened patients who were not randomized ('did not meet the eligibility criteria or declined participation' -> '16 patients were not randomized'), for the exclusion of the 6 randomized patients from the analysis sets (no study treatment received), for the exclusion of 13 patients from the per-protocol set (withdrawal of consent, refusal of therapy, or other reasons) and for the discontinuation of 2 and 3 patients before the protocol amendment (withdrew informed consent; refused further study treatment); the counts remain and the flow chart is not provided (text only). Only the definitions of the safety set and of treated patients (at least one dose of study treatment) remain in the Methods and table notes.",
+   "detected_if": "Reviewer states that reasons for non-randomisation of the 16 screened patients, for the exclusion of the 6 randomized patients or of the 13 patients from the per-protocol set, or for treatment discontinuations are not given, that the flow of participants is unclear, or that a CONSORT flow diagram / reasons for exclusion are needed.",
+   "not_enough": "Only noting the arithmetic inconsistency 147 vs 141 (that is M9); only criticising the per-protocol analysis itself (that is M5) or the loss to imaging follow-up (that is M6)."
+  },
+  {
+   "id": "m3",
+   "class": "minor",
+   "name": "Inconsistency between data in main text and tables",
+   "instantiation": "Text says '87.8% and 75.4%, respectively, had never smoked' (icotinib and placebo groups); Table 1 shows 52 (78.8%) never smokers in the icotinib group.",
+   "detected_if": "Reviewer points out that the never-smoker percentage in the text (87.8%) does not match Table 1 (78.8%), or otherwise identifies a text-vs-table numeric mismatch for baseline characteristics.",
+   "not_enough": "Generic advice to check numbers."
+  },
+  {
+   "id": "m4",
+   "class": "minor",
+   "name": "Word reversal leading to wrong interpretation",
+   "instantiation": "Results text: 'The 3-year DFS rate was lower in the icotinib group than in the placebo group (58.5% [95% CI 39.9–73.1%] vs. 36.1% [95% CI 19.9–52.6%]), as was the 5-year DFS rate (39.4% [95% CI 22.2–56.2%] vs. 25.8% [95% CI 8.7–47.1%])' (direction reversed relative to the numbers, the abstract and the Discussion).",
+   "detected_if": "Reviewer points out that this sentence has the direction reversed / contradicts the numbers, the abstract or the Discussion.",
+   "not_enough": ""
+  },
+  {
+   "id": "m5",
+   "class": "minor",
+   "name": "Hawthorne effect not considered",
+   "instantiation": "The limitation that close monitoring under the trial protocol (clinic visits and imaging every 12 weeks during the first 3 years) and the awareness of patients that they were taking part in a trial may have improved adherence to study treatment and follow-up care and influenced outcomes in both groups (a Hawthorne-type effect), so that adherence and outcomes in routine practice may differ, was removed.",
+   "detected_if": "Reviewer states that a Hawthorne effect / the attention, monitoring and frequent assessments of trial participation could have changed adherence, behaviour or outcomes in both groups (for example the favourable adherence and tolerability, or limited applicability to routine care) and is not discussed.",
+   "not_enough": "Only discussing blinding, unblinding at recurrence or crossover, without linking trial participation/attention to a change in behaviour or outcomes; generic generalisability remarks (that is M7)."
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "recommendation": "major revision",
+ "scores": [
+  {
+   "id": "M1",
+   "score": 0,
+   "evidence": "none ('an important negative randomized trial of a mechanistically motivated treatment')"
+  },
+  {
+   "id": "M2",
+   "score": 0,
+   "evidence": "none ('How the initial regimen assignment was generated and concealed' — only asks for more detail on randomisation of regimen assignment; does not identify the non-random fixed rotating within-regimen allocation)"
+  },
+  {
+   "id": "M3",
+   "score": 0.5,
+   "evidence": "'The sample-size description should identify the assumed number of shared controls, expected progression and event rates, and allowance for missing data' — notices the sample-size justification is incomplete but does not state that no power/sample-size calculation is reported (and elsewhere refers to 'the targeted 30% slowing' as if stated)"
+  },
+  {
+   "id": "M4",
+   "score": 0,
+   "evidence": "none (uses 'ALSFRS-R' throughout; 'describe which assessments were performed by telephone versus in person' is a generic administration question, not a statement that the outcome measure is unvalidated)"
+  },
+  {
+   "id": "M5",
+   "score": 0,
+   "evidence": "none ('Including all randomized participants \"with all available data\" is appropriate' — affirms inclusion of all randomized participants rather than detecting the per-protocol analysis)"
+  },
+  {
+   "id": "M6",
+   "score": 0,
+   "evidence": "none ('Numbers with observed ALSFRS-R, SVC, HHD, and NfL measurements at each assessment' is a generic request; the ~1/3 missing week-24 NfL and its threat to the NfL result are not identified)"
+  },
+  {
+   "id": "M7",
+   "score": 1,
+   "evidence": "'The abstract and conclusions ... should not imply that optimal dosing has been established, that the ISR pathway has been invalidated, or that alternative pathways necessarily must replace this approach'; supported by 'absent GDF-15 change does not necessarily prove absent target engagement, but prior-phase biomarker findings ... do not prove adequate pathway modulation in this trial'"
+  },
+  {
+   "id": "M8",
+   "score": 0,
+   "evidence": "none ('The change from a DRR of 1.04 using shared controls to 1.19' — no abstract-vs-results mismatch noted)"
+  },
+  {
+   "id": "M9",
+   "score": 0,
+   "evidence": "none ('The participant-flow text lists three DNL343 deaths before week 24, whereas the safety section reports four fatal TEAEs' is a different numeric issue from the key's 239 vs 249 and 122/149 inconsistencies)"
+  },
+  {
+   "id": "m1",
+   "score": 0,
+   "evidence": "none ('Ethical approval, informed consent, and independent safety monitoring are appropriately described' — affirms rather than detects)"
+  },
+  {
+   "id": "m2",
+   "score": 1,
+   "evidence": "'Reasons and timing of withdrawal by group, separating treatment discontinuation from withdrawal of outcome follow-up. The reason for the sponsor-initiated withdrawal.'"
+  },
+  {
+   "id": "m3",
+   "score": 0,
+   "evidence": "none ('relatively limited bulbar-onset representation' is a generalisability remark, not the text-vs-table mismatch)"
+  },
+  {
+   "id": "m4",
+   "score": 0.5,
+   "evidence": "'DNL343 had numerically higher proportions of ... Serious adverse events: 15.1% versus 11.5%' — states the correct direction contradicting the manuscript's reversed sentence, but does not point out the reversal itself"
+  },
+  {
+   "id": "m5",
+   "score": 0,
+   "evidence": "none"
+  }
+ ],
+ "review_word_count_estimate": 1900,
+ "judge": "J1",
+ "judge_model": "claude-fable-5",
+ "review_id": "econtrol_0749"
+}

@@ -1,0 +1,79 @@
+{
+ "recommendation": "major revision",
+ "scores": [
+  {
+   "id": "M1",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M2",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M3",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M4",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M5",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M6",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M7",
+   "score": 0.5,
+   "evidence": "“exploratory data from the ATE period of the study revealed no longer-term effects on neurofilament light chain levels and clinical outcomes, suggesting that longer placebo-controlled treatment duration would not have changed the results.” This is not warranted from the data presented... the conclusion about placebo-controlled duration should be removed or substantially softened."
+  },
+  {
+   "id": "M8",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M9",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "m1",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "m2",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "m3",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "m4",
+   "score": 0.5,
+   "evidence": "The manuscript states that the “incidence rates of adverse events were similar” between groups, but serious adverse events and discontinuations due to adverse events were numerically higher with DNL343. This should be described more precisely."
+  },
+  {
+   "id": "m5",
+   "score": 0,
+   "evidence": "none"
+  }
+ ],
+ "review_word_count_estimate": 690,
+ "judge": "J2",
+ "judge_model": "claude-opus-5",
+ "review_id": "econtrol_0744"
+}

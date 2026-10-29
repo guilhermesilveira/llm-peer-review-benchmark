@@ -1,0 +1,118 @@
+{
+ "scoring_rules": "Schroter et al. 2008 strict marking scheme. Score 1 = the review contains a clear statement that identifies THIS specific error AND explains why it is a problem (or what is missing). Score 0.5 = the review shows some evidence of having noticed the problem but the statement is vague, incomplete, or does not explain the issue (e.g. asks a related question without stating the error). Score 0 = not mentioned, or only a generic remark that would apply to any paper. Do NOT give credit for a comment about a different, merely related, weakness. Judge each error independently. Ignore how many other (non-listed) problems the review raises.",
+ "paper_title": "DNL343 vs placebo in amyotrophic lateral sclerosis, one regimen of a multiregimen platform trial with a shared concurrent placebo group, 74 centers in the US (paper P33)",
+ "errors": [
+  {
+   "id": "M1",
+   "class": "major",
+   "name": "Poor justification for conducting the study",
+   "instantiation": "The two-paragraph introduction (the integrated stress response [ISR] and its persistent activation in ALS and Alzheimer disease; elevated ISR biomarkers such as phosphorylated eIF2α and ATF4; DNL343 reducing CNS ISR activation, GDF-15, neurofilament light and neurologic deficits in mouse models; neuroprotection by ISR inhibition in ALS models; phase 1 and 1B results showing tolerability and reduced ISR biomarkers, including an approximately 10% reduction in CSF GDF-15) was replaced by three sentences: ALS is a progressive neurodegenerative disease; DNL343 is a brain-penetrant activator of eIF2B, a key regulator of the ISR; 'We therefore conducted a placebo-controlled randomized clinical trial (RCT) of DNL343 within a multiregimen ALS platform trial ...'. The two Discussion sentences restating the mechanistic rationale (ISR persistently active and dysregulated in ALS) were also removed.",
+   "detected_if": "Reviewer states that the introduction/rationale is inadequate: it does not explain why the ISR / eIF2B activation is a plausible therapeutic target in ALS (evidence of ISR activation in ALS, preclinical data), does not summarise the prior phase 1/1B evidence for DNL343 or why an efficacy trial at this dose was warranted, or fails to justify why this study was needed / what gap it fills.",
+   "not_enough": "Only saying the introduction is short, or asking for more references in general, without pointing to missing context/justification."
+  },
+  {
+   "id": "M2",
+   "class": "major",
+   "name": "Biased randomisation procedure",
+   "instantiation": "Within the DNL343 regimen, participants were 'allocated in a 3:1 ratio to receive oral DNL343, 200 mg/d, or matching placebo by the site investigator, who followed a fixed rotating sequence in the order in which participants were enrolled at the site (the first 3 participants to DNL343, the fourth to placebo, and so on)', separately within strata of background therapy; only the earlier assignment to a regimen is described as random. The trial is still presented as a double-blind, placebo-controlled randomized clinical trial.",
+   "detected_if": "Reviewer states that allocation by a fixed rotating sequence in order of enrolment by the site investigator is not true randomisation / is quasi-randomisation, is predictable or open to selection bias / lacks allocation concealment (and could undermine the blinding of the matching placebo), or that the comparison should not be called randomised.",
+   "not_enough": "Only noting baseline imbalance (e.g. in sex or baseline NfL) without linking it to the allocation method; only asking for more detail on randomisation; only discussing the use of a shared placebo from another regimen."
+  },
+  {
+   "id": "M3",
+   "class": "major",
+   "name": "No sample size calculation reported",
+   "instantiation": "The Sample Size section (regimen-specific clinical trial simulations; 240 participants randomized 3:1 with sharing of concurrent controls giving more than 80% power to detect a 30% slowing in disease progression at a 1-sided type I error below 2.5%) was deleted and replaced by 'We planned to enroll 240 participants in the DNL343 regimen.'; the limitation that the trial 'was not powered to identify subgroups' now says it 'was not designed to identify subgroups'.",
+   "detected_if": "Reviewer states that no sample size or power calculation is reported / asks how the planned 240 participants (and the 3:1 allocation with a shared placebo) were justified, e.g. the assumed effect size, power and error rate.",
+   "not_enough": "Only saying the sample is small, that the trial may be underpowered or that the 24-week duration is short, without noting the absence of a sample size justification."
+  },
+  {
+   "id": "M4",
+   "class": "major",
+   "name": "Unknown reliability and validity of the outcome measures",
+   "instantiation": "The ALS Functional Rating Scale–Revised (ALSFRS-R; described in the control version as 'a validated rating scale'; the functional component of the primary joint model and the first hierarchical secondary end point) was replaced throughout (abstract, Outcomes, Statistical Analysis, Results, Figure 2 legend, Tables 1 and 2) by 'a function questionnaire developed by the investigators for this trial (12 items covering bulbar, fine motor, gross motor, and respiratory function, each scored from 0 to 4 by site evaluators at clinic or telephone visits; total score range, 0-48 ...)'; no validation, reliability or prior use is reported.",
+   "detected_if": "Reviewer states that the investigator-developed function questionnaire is not validated / of unknown reliability and validity (including for telephone administration), or asks why a validated, established functional rating scale (e.g. the ALSFRS-R) was not used, particularly since it drives the primary outcome.",
+   "not_enough": "Generic remarks about functional scales being subjective or about the complexity of the joint model; comments on SVC, handheld dynamometry, NfL or the TRICALS risk score."
+  },
+  {
+   "id": "M5",
+   "class": "major",
+   "name": "Failure to analyse the data on an intention-to-treat basis",
+   "instantiation": "Efficacy analyses were done 'per protocol': participants who discontinued the trial drug because of adverse events (18 DNL343; 8 shared placebo, 5 of them regimen-specific) were excluded from the ECC and ERO populations, leaving 168 DNL343 and 131 placebo (58 regimen-specific) participants; the Methods state 'An intention-to-treat analysis was not performed, because data from participants who stopped the trial drug early were not considered informative about the efficacy of DNL343.' The statements that all randomized participants were analyzed by randomized group (intention-to-treat principle) and that primary analyses included 'those who discontinued the trial drug but continued in the trial' were removed; the abstract, the primary result ('per-protocol ECC population') and Table 2 (n = 168, 131 and 58) report the per-protocol population. Safety analyses use all 325 randomized participants.",
+   "detected_if": "Reviewer states that excluding participants who discontinued the trial drug because of adverse events (per-protocol analysis) instead of analysing all randomized participants (intention-to-treat) is inappropriate or biased (e.g. discontinuations were more frequent with DNL343, 9.7% vs 5.8%), and/or that an intention-to-treat analysis should be reported.",
+   "not_enough": "Merely noting the numbers of discontinuations or that efficacy and safety denominators differ without criticising the analysis population; only criticising the missing week-24 NfL samples (that is M6)."
+  },
+  {
+   "id": "M6",
+   "class": "major",
+   "name": "Poor response rate / follow-up",
+   "instantiation": "Week-24 serum NfL (the third hierarchical secondary end point and the only nominally significant efficacy finding, interpreted in the Discussion) was available for only 112 of 168 (66.7%) DNL343 and 79 of 131 (60.3%) shared placebo participants (36 of 58 [62.1%] regimen-specific placebo), about 64% overall; NfL analyses 'included participants with both a baseline and a week-24 serum sample' (complete case; the Table 2 note gives n = 112, 79 and 36). The missing data are not addressed anywhere (no imputation or sensitivity analysis, not among the limitations or the possible interpretations of the NfL finding).",
+   "detected_if": "Reviewer states that the week-24 NfL outcome is missing for about a third of participants (somewhat more in the placebo group), that the complete-case analysis threatens the NfL result (the nominal increase with DNL343), or that this missing outcome data is not addressed or discussed.",
+   "not_enough": "Only mentioning the per-protocol exclusion of participants who stopped the drug (that is M5); only mentioning the small optional CSF GDF-15 subset (about 25%, an acknowledged substudy limitation) or the follow-up discontinuations before week 24 (84% to 91% completed); generic remarks about missing data."
+  },
+  {
+   "id": "M7",
+   "class": "major",
+   "name": "Unjustified conclusions",
+   "instantiation": "The abstract conclusion now says the findings 'demonstrate that activation of eIF2B to inhibit the integrated stress response is not an effective therapeutic strategy for ALS or other neurodegenerative diseases at any dose or treatment duration, and further clinical development of drugs targeting this pathway is not warranted'; the final Conclusions say they 'establish that pharmacologic activation of eIF2B and inhibition of the ISR pathway do not modify the course of ALS, irrespective of dose or treatment duration, and that ISR-targeting approaches should be abandoned in ALS and in other neurodegenerative diseases such as Alzheimer disease'. The caveats were removed: that the results 'do not, on their own, justify abandoning therapeutic targeting of the ISR pathway' (with the call for future trials to power target-engagement assessments), that biological activity could not be fully confirmed and the drug may not have reached its targets, that further research is needed on how to assess ISR target engagement, and the limitation that the 24-week placebo-controlled duration may have been too short.",
+   "detected_if": "Reviewer states that the conclusions overreach the data: a single 24-week trial of one compound at one dose in ALS, with limited and inconclusive target-engagement data (no change in CSF GDF-15, biomarkers in a small subset), cannot establish that the ISR/eIF2B pathway is ineffective at any dose or duration, justify abandoning the pathway, or be extended to other neurodegenerative diseases.",
+   "not_enough": "Only saying the trial was negative or that the wording should be softened in general; only discussing the 24-week duration or the target-engagement data without linking them to the conclusions."
+  },
+  {
+   "id": "M8",
+   "class": "major",
+   "name": "Discrepancy between data reported in the abstract and results",
+   "instantiation": "The abstract reports the primary disease rate ratio (DRR) as '0.94 (95% credible interval, 0.75-1.19; probability of DRR <1, 0.70)'; the Results report '1.04 (95% credible interval [CrI], 0.83-1.32)' with 'probability of DRR <1 = 0.37'.",
+   "detected_if": "Reviewer points out that the abstract's DRR (0.94, probability 0.70) does not match the Results (1.04, probability 0.37), or otherwise identifies a mismatch between abstract and results figures.",
+   "not_enough": "Generic advice to check the abstract; only saying the abstract conclusion is not supported (that is M7)."
+  },
+  {
+   "id": "M9",
+   "class": "major",
+   "name": "Inconsistent numbers / denominators",
+   "instantiation": "The Results say that of the 259 screening assessments assigned to the DNL343 regimen, 10 did not lead to randomization 'and 239 unique participants met eligibility; of these, 186 were randomized to DNL343 and 63 were randomized to regimen-specific placebo' (259 - 10 = 249 and 186 + 63 = 249; the abstract says 249). TEAEs in the shared placebo group are given as '122 of 149 [87.8%]', whose group size is 139 (122/139 = 87.8%; 122/149 = 81.9%).",
+   "detected_if": "Reviewer states that participant numbers are inconsistent / do not add up (239 vs 249; 122 of 149 vs a shared placebo group of 139) or that the numbers are difficult to reconcile.",
+   "not_enough": "Only asking for a CONSORT diagram or for reasons for exclusions (that is m2); only noting that efficacy (168/131) and safety (186/139) denominators differ (that is M5) or that the NfL denominators are smaller (that is M6)."
+  },
+  {
+   "id": "m1",
+   "class": "minor",
+   "name": "No ethics committee approval",
+   "instantiation": "The sentence 'Protocol approval was provided for all trial sites by a single institutional review board.' was removed (the Good Clinical Practice, Declaration of Helsinki, written informed consent, data and safety monitoring board and CONSORT statements remain).",
+   "detected_if": "Reviewer states that ethics committee / IRB approval is not reported (or asks whether ethical approval was obtained).",
+   "not_enough": "Mentioning only informed consent, Helsinki/GCP compliance or the withheld registration identifier; generic remark that ethics should be considered (score 0)."
+  },
+  {
+   "id": "m2",
+   "class": "minor",
+   "name": "No explanations for ineligible or non-randomised cases / unclear participant flow",
+   "instantiation": "The reasons why 117 master-protocol screening assessments did not lead to assignment to a regimen (98 not meeting the criteria, 14 timed out of the screening window, 3 terminated early, 2 withdrew consent) and why 10 of the 259 assessments assigned to the DNL343 regimen did not lead to randomization (6 failed screening, 2 timed out, 1 terminated early, 1 died) were removed, as were the reasons why follow-up was discontinued before week 24 by 30 DNL343, 8 regimen-specific placebo and 13 shared placebo participants (early termination, death, withdrawal by the sponsor); the flow diagram is not provided (text only).",
+   "detected_if": "Reviewer states that reasons for non-randomisation of screened/assigned participants or for discontinuation of follow-up are not given, that the flow of participants is unclear, or that a CONSORT flow diagram with reasons is needed.",
+   "not_enough": "Only noting the arithmetic inconsistency 239 vs 249 (that is M9); only criticising the per-protocol exclusions (that is M5)."
+  },
+  {
+   "id": "m3",
+   "class": "minor",
+   "name": "Inconsistency between data in main text and tables",
+   "instantiation": "The text says bulbar-onset disease was present in 21.2% of the shared placebo group; Table 1 shows 17 (12.2%).",
+   "detected_if": "Reviewer points out that the bulbar-onset percentage for the shared placebo group in the text (21.2%) does not match Table 1 (12.2%), or otherwise identifies a text-vs-table numeric mismatch for baseline characteristics.",
+   "not_enough": "Generic advice to check numbers."
+  },
+  {
+   "id": "m4",
+   "class": "minor",
+   "name": "Word reversal leading to wrong interpretation",
+   "instantiation": "Results text: 'Serious adverse events were numerically less frequent in the DNL343 group than in the shared placebo group (28 participants [15.1%] vs 16 [11.5%])' (direction reversed relative to the numbers).",
+   "detected_if": "Reviewer points out that this sentence has the direction reversed / contradicts the numbers.",
+   "not_enough": ""
+  },
+  {
+   "id": "m5",
+   "class": "minor",
+   "name": "Hawthorne effect not considered",
+   "instantiation": "The limitation that frequent clinic or telephone visits and close monitoring, together with the awareness of taking part in a trial, may have influenced adherence, supportive care and outcomes in both groups (a Hawthorne-type effect), so that rates of functional decline outside a trial setting may differ, was removed.",
+   "detected_if": "Reviewer states that a Hawthorne effect / the attention, monitoring and frequent visits of trial participation could have changed adherence, care or outcomes in both groups (for example affecting the rate of decline in the placebo groups, or limiting generalisability to routine care) and is not discussed.",
+   "not_enough": "Only discussing blinding or the placebo response without linking trial participation/attention to a change in behaviour or outcomes; generic generalisability remarks (that is M7)."
+  }
+ ]
+}

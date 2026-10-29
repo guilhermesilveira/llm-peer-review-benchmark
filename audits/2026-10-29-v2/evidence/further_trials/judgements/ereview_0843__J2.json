@@ -1,0 +1,79 @@
+{
+ "recommendation": "reject",
+ "scores": [
+  {
+   "id": "M1",
+   "score": 0.5,
+   "evidence": "\"the introduction is quite brief and the discussion repetitive. The literature review should be more balanced and concise in the final version.\" (vague; does not specify the missing evidence base or rationale/hypothesis)"
+  },
+  {
+   "id": "M2",
+   "score": 1,
+   "evidence": "\"This is not adequate randomization with concealed allocation. It is a predictable assignment scheme. The enrolling physician knew treatment allocation at the point of enrollment... That opens the door to selection bias. It also raises doubts about the claim that the study was 'blinded'...\""
+  },
+  {
+   "id": "M3",
+   "score": 1,
+   "evidence": "\"the sample size section is inadequate. The paper states that 218 patients were planned, but gives no assumptions (effect size, variance, power, alpha, inflation for attrition, whether powered for main effects or interaction).\""
+  },
+  {
+   "id": "M4",
+   "score": 1,
+   "evidence": "\"the asthma severity score used both for eligibility and secondary outcomes was 'developed by the investigators for this trial.' The full scoring system, validation status, training of raters, and inter-rater reliability are not provided. This is a substantial limitation.\""
+  },
+  {
+   "id": "M5",
+   "score": 1,
+   "evidence": "\"The primary analysis should not be per-protocol only... Excluding randomized participants because they received additional therapy or had protocol deviations is especially problematic in acute severe asthma, because those deviations are likely related to prognosis and treatment response... An intention-to-treat primary analysis, with per-protocol only as sensitivity.\""
+  },
+  {
+   "id": "M6",
+   "score": 0.5,
+   "evidence": "\"Revisit/readmission outcomes were not statistically significant, follow-up was incomplete, and revisits were numerically higher in the budesonide groups\" (brief mention without quantifying the loss or discussing the resulting bias/handling)"
+  },
+  {
+   "id": "M7",
+   "score": 1,
+   "evidence": "\"The conclusions are not supported by the data... Yet the Abstract and Discussion conclude that repeated high-dose magnesium 'shortens the time to medical readiness for discharge.' That is not supported... is far beyond what these data can support. Reasons include: neutral primary endpoint, single-center study... severe exacerbations studied, not moderate ones...\""
+  },
+  {
+   "id": "M8",
+   "score": 1,
+   "evidence": "\"The key 12-hour discharge finding differs between Abstract and Results: Abstract: 46/71 (64.8%)... p = 0.002, ARR 26.6%; Results text: 40/71 (56.3%)... p = 0.033, ARR 18.1%. This is a major discrepancy in the central efficacy claim.\""
+  },
+  {
+   "id": "M9",
+   "score": 1,
+   "evidence": "\"Participant flow does not add up: '414… assessed… 254 were not randomized… 166 were randomized' But 414 − 254 = 160, not 166.\" ; \"Safety reports 'Two of the 77 patients in the high dose magnesium groups…' but elsewhere high-dose numbers are 78 randomized, 71 per-protocol. The denominator 77 needs explanation.\""
+  },
+  {
+   "id": "m1",
+   "score": 1,
+   "evidence": "\"Ethics committee approval is not stated. That must be included.\""
+  },
+  {
+   "id": "m2",
+   "score": 1,
+   "evidence": "\"A CONSORT flow diagram with correct arithmetic and reasons for all exclusions. Exact reasons for the 7 randomized patients not included in analysis. Exact reasons for the 14 major protocol deviations, by treatment arm.\""
+  },
+  {
+   "id": "m3",
+   "score": 1,
+   "evidence": "\"The text says: 'Boys made up… 60.7% of the standard dose magnesium with placebo group' but Table 1 shows 29/41 = 70.7%.\""
+  },
+  {
+   "id": "m4",
+   "score": 1,
+   "evidence": "\"'the mean asthma severity score at 4 and 8 h was higher in the combined budesonide groups than in the placebo groups (5.0 vs 5.9… 3.9 vs 4.6…)' Numerically, those values are lower, not higher.\""
+  },
+  {
+   "id": "m5",
+   "score": 0,
+   "evidence": "none"
+  }
+ ],
+ "review_word_count_estimate": 1650,
+ "judge": "J2",
+ "judge_model": "claude-opus-5",
+ "review_id": "ereview_0843"
+}

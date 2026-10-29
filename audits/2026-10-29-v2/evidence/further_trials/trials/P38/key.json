@@ -1,0 +1,118 @@
+{
+ "scoring_rules": "Schroter et al. 2008 strict marking scheme. Score 1 = the review contains a clear statement that identifies THIS specific error AND explains why it is a problem (or what is missing). Score 0.5 = the review shows some evidence of having noticed the problem but the statement is vague, incomplete, or does not explain the issue (e.g. asks a related question without stating the error). Score 0 = not mentioned, or only a generic remark that would apply to any paper. Do NOT give credit for a comment about a different, merely related, weakness. Judge each error independently. Ignore how many other (non-listed) problems the review raises.",
+ "paper_title": "High-dose vs standard-dose intravenous magnesium and nebulized budesonide vs placebo for severe asthma in children, 2x2 factorial pilot trial in a paediatric emergency department (paper P38)",
+ "errors": [
+  {
+   "id": "M1",
+   "class": "major",
+   "name": "Poor justification for conducting the study",
+   "instantiation": "The five-paragraph introduction (asthma prevalence and cost; standard treatment; GINA 2022 guidance that IV magnesium and inhaled corticosteroids are only tentatively recommended in severe attacks, with low evidence levels and cautions; proposed mechanisms of IV magnesium and of high-dose inhaled steroid and the adult evidence for repeated inhaled corticosteroids in the ED; the hypothesis that a high first magnesium dose followed by a second dose would keep serum magnesium above 2 mmol/L, given the 2.1-h half-life and rising renal clearance that limit single standard-dose infusions) was reduced to three sentences: acute severe asthma is a common reason for ED visits, IV magnesium and inhaled corticosteroids are used as additional treatments, 'We therefore conducted a placebo‐controlled trial' with four groups. The Discussion was left unchanged.",
+   "detected_if": "Reviewer states that the introduction/rationale is inadequate: it does not describe the existing evidence or guideline uncertainty for IV magnesium and inhaled corticosteroids in severe paediatric asthma, does not explain why a higher or repeated magnesium dose or high-dose nebulized budesonide might work better (e.g. short half-life, need to sustain serum levels), states no hypothesis, or fails to justify why this trial / factorial comparison was needed / what gap it fills.",
+   "not_enough": "Only saying the introduction is short, or asking for more references in general, without pointing to missing context/justification."
+  },
+  {
+   "id": "M2",
+   "class": "major",
+   "name": "Biased randomisation procedure",
+   "instantiation": "Allocation was 'determined by the enrolling physician from the date of presentation and the hospital record number': odd calendar dates to high dose magnesium and even dates to standard dose magnesium, and an odd final digit of the hospital record number to nebulized budesonide and an even digit to placebo; the enrolling physician recorded the assignment on a form passed to the pharmacist. The computer-generated random number list, the sealed envelopes opened only by the preparing pharmacist and the pharmacist blinding to patient identity were removed. The paper is still presented as a randomized, double-blind trial ('This was a blinded randomized placebo‐controlled study'), and the statement that blinding was preserved with clear solutions of the same volume remains.",
+   "detected_if": "Reviewer states that allocation by date of presentation and hospital record number is not true randomisation / is quasi-randomisation, is predictable or open to selection bias / lacks allocation concealment (and undermines the blinding, since the enrolling physician knows the assignment), or that the trial should not be called randomised.",
+   "not_enough": "Only noting baseline imbalance (e.g. in sex or baseline severity) without linking it to the allocation method; only asking for more detail on randomisation."
+  },
+  {
+   "id": "M3",
+   "class": "major",
+   "name": "No sample size calculation reported",
+   "instantiation": "The sample size paragraph (informal review of 10 ED patients with about 50% ready for discharge by 24 h; an improvement from 50% to 70%; 109 patients per magnesium dose for 80% power with two-sided alpha 0.05; 240 planned to allow for dropouts) was replaced by 'We planned to enrol 218 patients, 109 receiving high dose magnesium and 109 receiving standard dose magnesium, half of each with nebulized budesonide and half with nebulized placebo.' The abstract now reads '70% of the 218 children planned' (control: 'of the estimated 218 children required') and the Discussion '70% of our planned sample size' (control: 'estimated sample size').",
+   "detected_if": "Reviewer states that no sample size or power calculation is reported / asks how the planned 218 patients were justified (assumed outcome rates, effect size, power, alpha).",
+   "not_enough": "Only saying the sample is small, that the trial stopped early or is underpowered because of the early stop, without noting the absence of a sample size justification; criticising the assumptions of a sample size calculation (e.g. that it rests on a 24-h discharge proportion rather than the time-to-event primary outcome, on an informal review of 10 patients, or does not cover the budesonide factor) without stating that no calculation is reported."
+  },
+  {
+   "id": "M4",
+   "class": "major",
+   "name": "Unknown reliability and validity of the outcome measures",
+   "instantiation": "The Pediatric Respiratory Assessment Measure (PRAM), described in the control version as a validated clinical asthma severity score for children, was replaced by 'an asthma severity score developed by the investigators for this trial (5 items rating chest retractions, accessory muscle use, air entry, wheezing and oxygen saturation; total score 0 to 12)'; no information on validation, reliability or prior use is given. The score defines eligibility (score of 8 or more), is part of the discharge-readiness criteria that define the primary outcome (score below 4) and is the secondary outcome at 4, 8, 12 and 24 h; every mention of PRAM (Methods, abstract, limitations) now reads 'asthma severity score'. Reported values are unchanged.",
+   "detected_if": "Reviewer states that the investigator-developed asthma severity score is not validated / of unknown reliability and validity (e.g. inter-rater reliability, responsiveness), or asks for its psychometric properties / why a validated paediatric score (e.g. PRAM) was not used, particularly given its role in eligibility, the discharge criterion and the secondary outcomes.",
+   "not_enough": "Generic remarks that clinical severity scores are subjective or that medical readiness for discharge is a physician-judged outcome, without noting that the score used here is unvalidated."
+  },
+  {
+   "id": "M5",
+   "class": "major",
+   "name": "Failure to analyse the data on an intention-to-treat basis",
+   "instantiation": "All efficacy and safety analyses were done in a per-protocol population of 139 patients (71 high dose and 68 standard dose magnesium; 38, 33, 31 and 37 in the four groups) after excluding 14 patients (4, 3, 3 and 4) with 'major protocol deviations'; the Methods state 'An intention‐to‐treat analysis was not performed, because patients who did not receive the study treatments as specified were not considered informative about the effects of high dose magnesium or nebulized budesonide.' The full analysis set statements were removed. Table 1 still describes the 153 patients, while the Table 2 and Table 3 headers, the 12-h discharge result in the Results (40/71 vs 26/68, p = 0.033, absolute risk reduction 18.1%) and the Table 3 PICU percentages use the per-protocol population.",
+   "detected_if": "Reviewer states that analysing only the per-protocol population / excluding the 14 randomized patients with protocol deviations instead of an intention-to-treat analysis of all randomized patients is inappropriate or biased (breaks randomisation; deviations such as additional bronchodilator therapy are likely related to severity and outcome), and/or that an ITT analysis should be reported.",
+   "not_enough": "Merely noting that 14 patients were excluded or that the Ns of Table 1 and Tables 2/3 differ without criticising the analysis population; a criticism limited to the 7 randomized patients not included in the analysis (e.g. that the analysis is a modified rather than a strict ITT, or that all randomized patients should be analysed; these 7 are also excluded, with reasons, in the control version) without addressing the per-protocol analysis of 139 or the statement that ITT was not performed; only criticising the missing 7-day follow-up (that is M6)."
+  },
+  {
+   "id": "M6",
+   "class": "major",
+   "name": "Poor response rate / follow-up",
+   "instantiation": "The 7-day telephone follow-up (revisits and readmissions, a secondary outcome) was completed for only 47 of 71 (66.2%) high dose and 40 of 68 (58.8%) standard dose magnesium patients (87 of 139, 62.6%; 25, 22, 18 and 22 patients in the four groups); revisit and readmission rates (5/47 vs 8/40, p = 0.22; 8/43 vs 5/44, p = 0.34) were analysed 'in the patients reached' (complete case), and the missing data are not discussed anywhere. The control statements that follow-up was completed for 152 of the 153 patients and that 1 patient was lost to follow-up were removed; the Methods still say telephone follow-up was 'mandatory daily for 1 week'.",
+   "detected_if": "Reviewer states that the 7-day follow-up outcomes (revisits/readmissions) are missing for over a third of patients (more often in the standard dose group: 58.8% vs 66.2% reached), that this (differential) loss to follow-up / complete-case analysis threatens these results, or that it is not addressed (no imputation, sensitivity analysis or discussion), especially as follow-up was described as mandatory.",
+   "not_enough": "Only mentioning the per-protocol exclusion of 14 patients (that is M5) or the 7 randomized patients not analysed; generic remarks about missing data."
+  },
+  {
+   "id": "M7",
+   "class": "major",
+   "name": "Unjustified conclusions",
+   "instantiation": "The abstract conclusion now says 'Repeated high‐dose intravenous magnesium is safe and shortens the time to medical readiness for discharge, and a single high dose of nebulized budesonide reduces asthma severity. High‐dose magnesium with nebulized budesonide should replace standard‐dose magnesium as the routine emergency department treatment for all children with acute asthma, including those with moderate exacerbations.' The final paragraph says the regimen is 'safe and effective', leads to earlier readiness for discharge, that budesonide reduces asthma severity 'and the need for further care after discharge', and that the combination 'should therefore replace standard‐dose magnesium as the routine emergency treatment for all children with acute asthma exacerbations, including those with moderate attacks and those treated in general emergency departments, and can be expected to reduce hospital admissions'. The primary outcome did not differ (geometric means 13.16 to 14.30 h, p = 0.718), the only magnesium difference was the exploratory 12-h discharge proportion, revisits were not lower with budesonide, hospital admission was not an outcome, and the single-centre trial enrolled only severe exacerbations and stopped early. The caveat 'With our reduced patient number due to Covid‐19, our hypothesis could not be proven or disproven.' and the cautious original conclusions were removed.",
+   "detected_if": "Reviewer states that the conclusions overreach the data: the primary outcome did not differ, the 12-h discharge finding is exploratory, post-discharge care was not reduced, hospital admissions were not measured, and/or a small single-centre trial of severe exacerbations that stopped early cannot support replacing standard care for all children with acute asthma, moderate attacks or general emergency departments.",
+   "not_enough": "Only saying the wording should be softened or generic hedging advice unrelated to the non-significant primary outcome or the over-generalisation; only noting the abstract/results discrepancy (that is M8)."
+  },
+  {
+   "id": "M8",
+   "class": "major",
+   "name": "Discrepancy between data reported in the abstract and results",
+   "instantiation": "The abstract reports discharge by 12 h in '46/71 patients (64.8%)' with high dose magnesium vs 26/68 (38.2%) with standard dose, 'p = 0.002, absolute risk reduction 26.6%, 95% CI, 9.9% to 41.2%'; the Results text reports 40/71 (56.3%) vs 26/68 (38.2%), p = 0.033, absolute risk reduction 18.1%, 95% CI 1.5% to 33.3%.",
+   "detected_if": "Reviewer points out that the abstract's 12-h discharge result (46/71, 64.8%, risk difference 26.6%, p = 0.002) does not match the Results (40/71, 56.3%, 18.1%, p = 0.033), or otherwise identifies a mismatch between abstract and results figures.",
+   "not_enough": "Generic advice to check the abstract; only saying the abstract conclusion is not supported (that is M7)."
+  },
+  {
+   "id": "M9",
+   "class": "major",
+   "name": "Inconsistent numbers / denominators",
+   "instantiation": "The Results say that of 414 patients assessed '254 were not randomized, and 166 were randomized', but 414 minus 254 is 160, and 166 minus the 7 patients not analysed is 159, not the 153 analysed patients (78 + 75; Table 1). Facial flushing is reported in 'Two of the 77 patients in the high dose magnesium groups (2.8%)', whereas the high dose per-protocol population has 71 patients (2/71 = 2.8%; 2/77 = 2.6%) and the high dose groups in Table 1 have 78.",
+   "detected_if": "Reviewer states that participant numbers are inconsistent / do not add up (166 randomized vs 414 minus 254 = 160 or vs 153 + 7 = 160; 2 of 77 vs 71 high dose patients) or that the numbers are difficult to reconcile.",
+   "not_enough": "Only asking for a CONSORT diagram (that is m2); only noting that the Ns of Table 1 (153) and Tables 2/3 (139, per-protocol) differ (that is M5) or that the follow-up denominators are smaller (that is M6)."
+  },
+  {
+   "id": "m1",
+   "class": "minor",
+   "name": "No ethics committee approval",
+   "instantiation": "The statement that the study was approved by the institutional review board of the hospital was removed ('The study was registered (registration identifier withheld for review).'); written informed consent and assent remain.",
+   "detected_if": "Reviewer states that ethics committee / IRB approval is not reported (or asks whether ethical approval was obtained).",
+   "not_enough": "Mentioning only informed consent/assent or the withheld registration identifier; generic remark that ethics should be considered (score 0)."
+  },
+  {
+   "id": "m2",
+   "class": "minor",
+   "name": "No explanations for ineligible or non-randomised cases / unclear participant flow",
+   "instantiation": "The reasons why 254 of the 414 assessed patients were not randomized ('did not meet the eligibility criteria or declined participation') and why 7 randomized patients were not included in the analysis ('withdrew consent or were found not to meet the eligibility criteria after randomization') were removed; the text now says only '254 were not randomized' and 'Seven randomized patients were not included in the analysis.' The flow figure is not provided (text only).",
+   "detected_if": "Reviewer states that reasons for non-randomisation of the 254 assessed patients or for the exclusion of the 7 randomized patients are not given, that the flow of participants is unclear, or that a CONSORT flow diagram / reasons for exclusion are needed.",
+   "not_enough": "Only noting the arithmetic inconsistency 166 vs 160 (that is M9); only criticising the per-protocol analysis (that is M5)."
+  },
+  {
+   "id": "m3",
+   "class": "minor",
+   "name": "Inconsistency between data in main text and tables",
+   "instantiation": "Text says boys made up 60.7% of the standard dose magnesium with placebo group; Table 1 shows 29 (70.7).",
+   "detected_if": "Reviewer points out that the percentage of boys in the standard dose magnesium with placebo group in the text (60.7%) does not match Table 1 (70.7%), or otherwise identifies a text-vs-table numeric mismatch for baseline characteristics.",
+   "not_enough": "Generic advice to check numbers."
+  },
+  {
+   "id": "m4",
+   "class": "minor",
+   "name": "Word reversal leading to wrong interpretation",
+   "instantiation": "Results text: 'the mean asthma severity score at 4 and 8 h was higher in the combined budesonide groups than in the placebo groups (5.0 vs 5.9 at 4 h and 3.9 vs 4.6 at 8 h)' (direction reversed relative to the numbers, Table 3, the abstract and the Discussion, which report lower scores with budesonide).",
+   "detected_if": "Reviewer points out that this sentence has the direction reversed / contradicts the numbers, Table 3, the abstract or the Discussion.",
+   "not_enough": ""
+  },
+  {
+   "id": "m5",
+   "class": "minor",
+   "name": "Hawthorne effect not considered",
+   "instantiation": "The limitation that the close monitoring of enrolled patients (continuous cardiorespiratory monitoring, vital signs every 30 min, scheduled severity scoring and blood sampling), the daily telephone calls after discharge and the awareness of families and staff of taking part in a trial may have influenced treatment and discharge decisions and post-discharge care seeking in all four groups (a Hawthorne-type effect), so that discharge times and revisit rates in routine care may differ, was removed.",
+   "detected_if": "Reviewer states that a Hawthorne effect / the attention, monitoring and awareness of trial participation could have changed clinician discharge decisions, family behaviour or care seeking in all groups (e.g. discharge times or revisit rates, or limited generalisability to routine care) and is not discussed.",
+   "not_enough": "Only discussing blinding or the subjectivity of the discharge decision, without linking trial participation/attention to a change in behaviour or outcomes; generic generalisability remarks (that is M7)."
+  }
+ ]
+}

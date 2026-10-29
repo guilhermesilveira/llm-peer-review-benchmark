@@ -1,0 +1,79 @@
+{
+ "recommendation": "reject",
+ "scores": [
+  {
+   "id": "M1",
+   "score": 0.5,
+   "evidence": "the introduction is quite brief and the discussion repetitive. The literature review should be more balanced and concise in the final version."
+  },
+  {
+   "id": "M2",
+   "score": 1,
+   "evidence": "This is not adequate randomization with concealed allocation. It is a predictable assignment scheme. The enrolling physician knew treatment allocation at the point of enrollment... That opens the door to selection bias. It also raises doubts about the claim that the study was 'blinded'... At minimum, the study should be described as quasi-randomized rather than randomized."
+  },
+  {
+   "id": "M3",
+   "score": 1,
+   "evidence": "Also, the sample size section is inadequate. The paper states that 218 patients were planned, but gives no assumptions (effect size, variance, power, alpha, inflation for attrition, whether powered for main effects or interaction). That needs to be reported."
+  },
+  {
+   "id": "M4",
+   "score": 1,
+   "evidence": "the asthma severity score used both for eligibility and secondary outcomes was 'developed by the investigators for this trial.' The full scoring system, validation status, training of raters, and inter-rater reliability are not provided. This is a substantial limitation."
+  },
+  {
+   "id": "M5",
+   "score": 1,
+   "evidence": "This is a major problem. In randomized trials, the primary efficacy analysis should ordinarily be intention-to-treat. Excluding randomized participants because they received additional therapy or had protocol deviations is especially problematic in acute severe asthma, because those deviations are likely related to prognosis and treatment response."
+  },
+  {
+   "id": "M6",
+   "score": 0.5,
+   "evidence": "Revisit/readmission outcomes were not statistically significant, follow-up was incomplete, and revisits were numerically higher in the budesonide groups"
+  },
+  {
+   "id": "M7",
+   "score": 1,
+   "evidence": "The paper's conclusions are much too strong for the results shown. The primary outcome is essentially negative... 'should replace standard-dose magnesium...' is far beyond what these data can support... single-center study... early stopping; severe exacerbations studied, not moderate ones"
+  },
+  {
+   "id": "M8",
+   "score": 1,
+   "evidence": "The key 12-hour discharge finding differs between Abstract and Results: Abstract: 46/71 (64.8%) vs 26/68 (38.2%), p = 0.002, ARR 26.6%; Results text: 40/71 (56.3%) vs 26/68 (38.2%), p = 0.033, ARR 18.1%. This is a major discrepancy"
+  },
+  {
+   "id": "M9",
+   "score": 1,
+   "evidence": "Participant flow does not add up... But 414 − 254 = 160, not 166. ... Safety reports 'Two of the 77 patients in the high dose magnesium groups…' but elsewhere high-dose numbers are 78 randomized, 71 per-protocol. The denominator 77 needs explanation."
+  },
+  {
+   "id": "m1",
+   "score": 1,
+   "evidence": "Ethics committee approval is not stated. That must be included."
+  },
+  {
+   "id": "m2",
+   "score": 1,
+   "evidence": "A CONSORT flow diagram with correct arithmetic and reasons for all exclusions. Exact reasons for the 7 randomized patients not included in analysis."
+  },
+  {
+   "id": "m3",
+   "score": 1,
+   "evidence": "The text says: 'Boys made up… 60.7% of the standard dose magnesium with placebo group' but Table 1 shows 29/41 = 70.7%."
+  },
+  {
+   "id": "m4",
+   "score": 1,
+   "evidence": "'the mean asthma severity score at 4 and 8 h was higher in the combined budesonide groups...' Numerically, those values are lower, not higher."
+  },
+  {
+   "id": "m5",
+   "score": 0,
+   "evidence": "none"
+  }
+ ],
+ "review_word_count_estimate": 1900,
+ "judge": "J1",
+ "judge_model": "claude-fable-5",
+ "review_id": "ereview_0843"
+}

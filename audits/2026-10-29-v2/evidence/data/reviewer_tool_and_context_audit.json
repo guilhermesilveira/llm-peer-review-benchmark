@@ -1,0 +1,1102 @@
+{
+ "experiment2_reviews": {
+  "review_040": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_040.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "planted": 1,
+    "seeded": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_032": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_032.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_016": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_016.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_006": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_006.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_023": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_023.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "memory": 1,
+    "error-detection": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_047": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_047.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_039": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_039.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_017": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_017.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "schroter": 1,
+    "inserted error": 1,
+    "planted": 2,
+    "error-detection": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_008": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_008.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_025": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_025.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "planted": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_005": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_005.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_029": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_029.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "schroter": 1,
+    "deliberately inserted": 1,
+    "inserted error": 3,
+    "memory": 1,
+    "error detection experiment": 1,
+    "error-detection": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_043": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_043.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_041": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_041.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "deliberately inserted": 1,
+    "inserted error": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_022": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_022.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "seeded": 6
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_004": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_004.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "error-detection": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_026": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_026.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "deliberately inserted": 1,
+    "inserted error": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_024": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_024.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "seeded": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_020": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_020.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_011": {
+   "tools": {
+    "Read": 1,
+    "Write": 3
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_011.md",
+    "review_011.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_045": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_045.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_036": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_036.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_030": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_030.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_001": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_001.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_007": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_007.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "schroter": 1,
+    "seeded": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_033": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_033.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_038": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_038.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_014": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_014.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_027": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_027.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "schroter": 1,
+    "deliberately inserted": 1,
+    "inserted error": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_010": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_010.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_031": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_031.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "memory": 1,
+    "error detection experiment": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_035": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_035.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "seeded": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_021": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_021.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_019": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_019.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_009": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_009.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_046": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_046.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "schroter": 1,
+    "deliberately inserted": 1,
+    "inserted error": 1,
+    "error-detection": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_044": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_044.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_015": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_015.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_048": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_048.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "deliberately inserted": 2,
+    "inserted error": 3,
+    "planted": 2,
+    "error detection experiment": 1,
+    "error-detection": 2
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_034": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_034.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_037": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_037.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "schroter": 1,
+    "deliberately inserted": 3,
+    "inserted error": 3
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_012": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_012.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "seeded": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "review_018": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_018.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_042": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_042.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_028": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "review_028.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_002": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_002.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_003": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "review_003.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "review_013": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "review_013.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  }
+ },
+ "experiment2_controls": {
+  "control_10": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "control_10.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "schroter": 1,
+    "deliberately inserted": 1,
+    "inserted error": 1,
+    "planted": 1,
+    "seeded": 1,
+    "error detection experiment": 2,
+    "error-detection": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "control_03": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "control_03.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "control_04": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "control_04.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "control_08": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "control_08.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "control_05": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "control_05.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "control_01": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "control_01.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "control_12": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "control_12.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "control_11": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "control_11.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "control_06": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "control_06.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  },
+  "control_02": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_1.md"
+   ],
+   "writes": [
+    "control_02.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "schroter": 1,
+    "memory": 1,
+    "error-detection": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "control_07": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_2.md"
+   ],
+   "writes": [
+    "control_07.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {
+    "inserted error": 1
+   },
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": true
+  },
+  "control_09": {
+   "tools": {
+    "Read": 1,
+    "Write": 1
+   },
+   "reads": [
+    "manuscript_3.md"
+   ],
+   "writes": [
+    "control_09.md"
+   ],
+   "other_tools": [],
+   "tool_use_clean": true,
+   "context_hint_in_reasoning": {},
+   "context_hint_in_review_text": {},
+   "referenced_experiment_context": false
+  }
+ }
+}

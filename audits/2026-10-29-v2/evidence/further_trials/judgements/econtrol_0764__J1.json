@@ -1,0 +1,79 @@
+{
+ "recommendation": "major revision",
+ "scores": [
+  {
+   "id": "M1",
+   "score": 0,
+   "evidence": "none ('The research question is clear ... after encouraging early-phase pharmacokinetic and biomarker findings')"
+  },
+  {
+   "id": "M2",
+   "score": 0,
+   "evidence": "none ('does not describe sequence generation, allocation concealment, who was blinded' — only asks for more detail on randomisation, which the key's not_enough excludes)"
+  },
+  {
+   "id": "M3",
+   "score": 0,
+   "evidence": "none ('Since the sample-size calculation was based on detecting a 30% slowing...' — treats the calculation as present; Minor 3 asks only how 240 relates to 249, not for a missing justification)"
+  },
+  {
+   "id": "M4",
+   "score": 0,
+   "evidence": "none (uses 'ALSFRS-R' throughout without questioning the outcome measure's validity)"
+  },
+  {
+   "id": "M5",
+   "score": 0,
+   "evidence": "none ('the randomized, placebo-controlled, intention-to-treat design is appropriate in principle' — affirms ITT rather than detecting the per-protocol analysis)"
+  },
+  {
+   "id": "M6",
+   "score": 0,
+   "evidence": "none (Major 3 is generic missing-data/dropout discussion; the week-24 NfL complete-case problem is not identified)"
+  },
+  {
+   "id": "M7",
+   "score": 0,
+   "evidence": "none ('The conclusion that \"DNL343 did not slow disease progression\" is stronger than the data warrant. Prefer wording such as...' — general wording-softening only, which the key's not_enough excludes; no mention of the pathway-abandonment/any-dose/other-disease claims)"
+  },
+  {
+   "id": "M8",
+   "score": 0,
+   "evidence": "none (cites 'DRR 1.04 (95% CrI, 0.83–1.32; posterior probability DRR <1, 0.37)' with no abstract-vs-results mismatch noted)"
+  },
+  {
+   "id": "M9",
+   "score": 0,
+   "evidence": "none (Minor 3 asks how 240 relates to 249 and 76, not the 239 vs 249 or 122/149 inconsistencies)"
+  },
+  {
+   "id": "m1",
+   "score": 0,
+   "evidence": "none ('Ethical oversight and consent are described' — affirms rather than detects)"
+  },
+  {
+   "id": "m2",
+   "score": 1,
+   "evidence": "'Please provide a participant flow and reasons for discontinuation by group and over time, clarify which participants continued outcome assessments after stopping study drug'"
+  },
+  {
+   "id": "m3",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "m4",
+   "score": 0.5,
+   "evidence": "'serious adverse events were numerically more frequent with DNL343 than with shared placebo (15.1% vs 11.5%)' — states the correct direction against the manuscript's claim, but does not point out the reversed Results sentence itself"
+  },
+  {
+   "id": "m5",
+   "score": 0,
+   "evidence": "none"
+  }
+ ],
+ "review_word_count_estimate": 1550,
+ "judge": "J1",
+ "judge_model": "claude-fable-5",
+ "review_id": "econtrol_0764"
+}

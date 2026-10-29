@@ -1,0 +1,79 @@
+{
+ "recommendation": "major revision",
+ "scores": [
+  {
+   "id": "M1",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M2",
+   "score": 0,
+   "evidence": "How the initial regimen assignment was generated and concealed, including which regimens were available to each participant."
+  },
+  {
+   "id": "M3",
+   "score": 0.5,
+   "evidence": "The sample-size description should identify the assumed number of shared controls, expected progression and event rates, and allowance for missing data."
+  },
+  {
+   "id": "M4",
+   "score": 0,
+   "evidence": "Briefly describe which assessments were performed by telephone versus in person, and how consistency was maintained across sites."
+  },
+  {
+   "id": "M5",
+   "score": 0,
+   "evidence": "Including all randomized participants “with all available data” is appropriate, but does not by itself eliminate bias from missing outcomes."
+  },
+  {
+   "id": "M6",
+   "score": 0.5,
+   "evidence": "Numbers with observed ALSFRS-R, SVC, HHD, and NfL measurements at each assessment. ... The assumptions about missing outcomes used by each analysis."
+  },
+  {
+   "id": "M7",
+   "score": 1,
+   "evidence": "The abstract and conclusions should consistently state that 200 mg daily did not demonstrate slowing over the studied randomized period in the enrolled population. They should not imply that optimal dosing has been established, that the ISR pathway has been invalidated, or that alternative pathways necessarily must replace this approach."
+  },
+  {
+   "id": "M8",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M9",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "m1",
+   "score": 0,
+   "evidence": "Ethical approval, informed consent, and independent safety monitoring are appropriately described."
+  },
+  {
+   "id": "m2",
+   "score": 1,
+   "evidence": "Reasons and timing of withdrawal by group, separating treatment discontinuation from withdrawal of outcome follow-up. The reason for the sponsor-initiated withdrawal."
+  },
+  {
+   "id": "m3",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "m4",
+   "score": 0.5,
+   "evidence": "Compared with shared placebo, DNL343 had numerically higher proportions of: ... Serious adverse events: 15.1% versus 11.5%"
+  },
+  {
+   "id": "m5",
+   "score": 0,
+   "evidence": "none"
+  }
+ ],
+ "review_word_count_estimate": 1500,
+ "judge": "J2",
+ "judge_model": "claude-opus-5",
+ "review_id": "econtrol_0749"
+}

@@ -1,0 +1,79 @@
+{
+ "recommendation": "major revision",
+ "scores": [
+  {
+   "id": "M1",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M2",
+   "score": 0,
+   "evidence": "The report states that the study was double blind and that participants were randomized within medication strata, but does not describe sequence generation, allocation concealment, who was blinded, or how the regimen and treatment assignments were implemented."
+  },
+  {
+   "id": "M3",
+   "score": 0,
+   "evidence": "Since the sample-size calculation was based on detecting a 30% slowing, please report the posterior probability of the prespecified 30% effect"
+  },
+  {
+   "id": "M4",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M5",
+   "score": 0,
+   "evidence": "the randomized, placebo-controlled, intention-to-treat design is appropriate in principle"
+  },
+  {
+   "id": "M6",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M7",
+   "score": 0.5,
+   "evidence": "while its findings should be interpreted as a lack of demonstrated efficacy rather than proof that no effect is possible. ... The conclusion that “DNL343 did not slow disease progression” is stronger than the data warrant."
+  },
+  {
+   "id": "M8",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M9",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "m1",
+   "score": 0,
+   "evidence": "Ethical oversight and consent are described."
+  },
+  {
+   "id": "m2",
+   "score": 1,
+   "evidence": "Please provide a participant flow and reasons for discontinuation by group and over time, clarify which participants continued outcome assessments after stopping study drug, and state how missing data were handled in each analysis."
+  },
+  {
+   "id": "m3",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "m4",
+   "score": 0.5,
+   "evidence": "However, serious adverse events were numerically more frequent with DNL343 than with shared placebo (15.1% vs 11.5%), and discontinuation due to adverse events was also more frequent (9.7% vs 5.8%)."
+  },
+  {
+   "id": "m5",
+   "score": 0,
+   "evidence": "none"
+  }
+ ],
+ "review_word_count_estimate": 1270,
+ "judge": "J2",
+ "judge_model": "claude-opus-5",
+ "review_id": "econtrol_0764"
+}

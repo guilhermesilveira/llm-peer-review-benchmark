@@ -1,0 +1,13 @@
+{
+  "study_url": "https://www.medrxiv.org/content/10.64898/2026.10.25.26366455v2",
+  "version_posted": "2026-10-28",
+  "audit_date": "2026-10-29",
+  "repository_commit": "b05dbde6374c4bdafa1dfc4b5e4b4819f032bc4a",
+  "source_zip_sha256": "6cc133458a90fe96caa045ef51134af67a9612d501c347e81a616dd0d5272b98",
+  "source_zip_url": "https://www.medrxiv.org/content/medrxiv/early/2026/10/28/2026.10.25.26366455.1/DC2/embed/media-2.zip?download=true",
+  "source_pdfs_sha256": {
+    "main": "6cf76fed02702c346e58ab4400544518f833873979adb2c619da923d0ad8ef8b",
+    "supp": "153e317c55b1e600097b87f258b35757b05db30e74d07140566bcf43bf69c88c"
+  },
+  "rights": "Study generated data and figures CC BY 4.0; code MIT; third-party source quotations retain their original rights."
+}

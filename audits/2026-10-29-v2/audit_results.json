@@ -1,0 +1,246 @@
+{
+  "scope": "medRxiv DOI 10.64898/2026.10.25.26366455 version 2; saved data only",
+  "point_estimate_checks": {
+    "n": 120,
+    "max_abs_difference": 1.4210854715202004e-14
+  },
+  "raw_modern_counts": {
+    "review": 840,
+    "control": 704
+  },
+  "control_flags": {
+    "n_reviews": 704,
+    "n_target_items": 9856,
+    "n_flags": 1737,
+    "item_nonflagging_percent": 82.37621753246754,
+    "reviews_with_any_flag": 675,
+    "reviews_with_any_flag_percent": 95.88068181818181,
+    "mean_flags_per_review": 2.4673295454545454,
+    "m4_flagged_ids": [
+      "econtrol_0744",
+      "econtrol_0749",
+      "econtrol_0764"
+    ]
+  },
+  "p_comparisons": {
+    "data": {
+      "trial_means": [
+        {
+          "trial": 1,
+          "sol_mean_of_14": 12.0,
+          "opus55_mean_of_14": 13.125,
+          "sol_minus_opus55": -1.125
+        },
+        {
+          "trial": 2,
+          "sol_mean_of_14": 12.5625,
+          "opus55_mean_of_14": 13.0,
+          "sol_minus_opus55": -0.4375
+        },
+        {
+          "trial": 3,
+          "sol_mean_of_14": 11.875,
+          "opus55_mean_of_14": 12.75,
+          "sol_minus_opus55": -0.875
+        }
+      ],
+      "mean_difference": -0.8125,
+      "review_label_exact_p": 0.0001457725947521866,
+      "extreme_permutations": 50,
+      "all_permutations": 343000,
+      "trial_label_exact_p": 0.25
+    },
+    "data_original": {
+      "trial_means": [
+        {
+          "trial": 1,
+          "sol_mean_of_14": 11.625,
+          "opus55_mean_of_14": 13.0625,
+          "sol_minus_opus55": -1.4375
+        },
+        {
+          "trial": 2,
+          "sol_mean_of_14": 11.5,
+          "opus55_mean_of_14": 12.1875,
+          "sol_minus_opus55": -0.6875
+        },
+        {
+          "trial": 3,
+          "sol_mean_of_14": 12.9375,
+          "opus55_mean_of_14": 13.125,
+          "sol_minus_opus55": -0.1875
+        }
+      ],
+      "mean_difference": -0.7708333333333334,
+      "review_label_exact_p": 0.00023323615160349855,
+      "extreme_permutations": 80,
+      "all_permutations": 343000,
+      "trial_label_exact_p": 0.25
+    }
+  },
+  "seeded_key_exclusion_conflicts": [
+    {
+      "review_id": "ereview_0843",
+      "trial": "P38",
+      "item": "M1",
+      "key": {
+        "id": "M1",
+        "class": "major",
+        "name": "Poor justification for conducting the study",
+        "instantiation": "The five-paragraph introduction (asthma prevalence and cost; standard treatment; GINA 2022 guidance that IV magnesium and inhaled corticosteroids are only tentatively recommended in severe attacks, with low evidence levels and cautions; proposed mechanisms of IV magnesium and of high-dose inhaled steroid and the adult evidence for repeated inhaled corticosteroids in the ED; the hypothesis that a high first magnesium dose followed by a second dose would keep serum magnesium above 2 mmol/L, given the 2.1-h half-life and rising renal clearance that limit single standard-dose infusions) was reduced to three sentences: acute severe asthma is a common reason for ED visits, IV magnesium and inhaled corticosteroids are used as additional treatments, 'We therefore conducted a placebo\u2010controlled trial' with four groups. The Discussion was left unchanged.",
+        "detected_if": "Reviewer states that the introduction/rationale is inadequate: it does not describe the existing evidence or guideline uncertainty for IV magnesium and inhaled corticosteroids in severe paediatric asthma, does not explain why a higher or repeated magnesium dose or high-dose nebulized budesonide might work better (e.g. short half-life, need to sustain serum levels), states no hypothesis, or fails to justify why this trial / factorial comparison was needed / what gap it fills.",
+        "not_enough": "Only saying the introduction is short, or asking for more references in general, without pointing to missing context/justification."
+      },
+      "judgments": [
+        {
+          "judge": "J1",
+          "id": "M1",
+          "score": 0.5,
+          "evidence": "the introduction is quite brief and the discussion repetitive. The literature review should be more balanced and concise in the final version."
+        },
+        {
+          "judge": "J2",
+          "id": "M1",
+          "score": 0.5,
+          "evidence": "\"the introduction is quite brief and the discussion repetitive. The literature review should be more balanced and concise in the final version.\" (vague; does not specify the missing evidence base or rationale/hypothesis)"
+        }
+      ],
+      "mean_score": 0.5,
+      "review_path_in_archive": "further_trials/reviews/ereview_0843.md"
+    },
+    {
+      "review_id": "ereview_0689",
+      "trial": "P18",
+      "item": "M3",
+      "key": {
+        "id": "M3",
+        "class": "major",
+        "name": "No sample size calculation reported",
+        "instantiation": "The sample size paragraph (assumed median DFS of 40 vs 22 months based on ADJUVANT/CTONG1104, HR 0.55, 45-month enrollment and 5-year follow-up, 112 patients / 89 DFS events, two-sided alpha 0.05, 80% power, 10% dropout, 124 patients) was replaced by 'We planned to enroll 124 patients (62 per group; protocol version 2.0).', and 'or primary endpoint assumptions' was removed from the sentence on the over-enrollment to 141 patients.",
+        "detected_if": "Reviewer states that no sample size or power calculation is reported / asks how the planned 124 patients (or the number of DFS events needed) were justified.",
+        "not_enough": "Only saying the sample is small, that subgroup analyses are underpowered, or criticising the enrollment beyond the planned 124 patients, without noting the absence of a sample size justification."
+      },
+      "judgments": [
+        {
+          "judge": "J1",
+          "id": "M3",
+          "score": 0.5,
+          "evidence": "\"Please also explain why 141 patients were randomized despite a planned sample size of 124, and whether the power calculation was updated after the protocol amendment.\" (asks a related question about the power calculation without stating that no sample size/power calculation is reported; mostly over-enrollment criticism, which the key lists as not enough)"
+        },
+        {
+          "judge": "J2",
+          "id": "M3",
+          "score": 0.5,
+          "evidence": "\"Please also explain why 141 patients were randomized despite a planned sample size of 124, and whether the power calculation was updated after the protocol amendment.\""
+        }
+      ],
+      "mean_score": 0.5,
+      "review_path_in_archive": "further_trials/reviews/ereview_0689.md"
+    }
+  ],
+  "control_reversal_cases": [
+    {
+      "review_id": "econtrol_0744",
+      "trial": "P33",
+      "item": "m4",
+      "key": {
+        "id": "m4",
+        "class": "minor",
+        "name": "Word reversal leading to wrong interpretation",
+        "instantiation": "Results text: 'Serious adverse events were numerically less frequent in the DNL343 group than in the shared placebo group (28 participants [15.1%] vs 16 [11.5%])' (direction reversed relative to the numbers).",
+        "detected_if": "Reviewer points out that this sentence has the direction reversed / contradicts the numbers.",
+        "not_enough": ""
+      },
+      "judgments": [
+        {
+          "judge": "J1",
+          "id": "m4",
+          "score": 0.5,
+          "evidence": "'The manuscript states that the \"incidence rates of adverse events were similar\" between groups, but serious adverse events and discontinuations due to adverse events were numerically higher with DNL343. This should be described more precisely.' (notices the text contradicts the numbers but does not point to the reversed Results sentence)"
+        },
+        {
+          "judge": "J2",
+          "id": "m4",
+          "score": 0.5,
+          "evidence": "The manuscript states that the \u201cincidence rates of adverse events were similar\u201d between groups, but serious adverse events and discontinuations due to adverse events were numerically higher with DNL343. This should be described more precisely."
+        }
+      ],
+      "mean_score": 0.5,
+      "review_path_in_archive": "further_trials/reviews/econtrol_0744.md"
+    },
+    {
+      "review_id": "econtrol_0749",
+      "trial": "P33",
+      "item": "m4",
+      "key": {
+        "id": "m4",
+        "class": "minor",
+        "name": "Word reversal leading to wrong interpretation",
+        "instantiation": "Results text: 'Serious adverse events were numerically less frequent in the DNL343 group than in the shared placebo group (28 participants [15.1%] vs 16 [11.5%])' (direction reversed relative to the numbers).",
+        "detected_if": "Reviewer points out that this sentence has the direction reversed / contradicts the numbers.",
+        "not_enough": ""
+      },
+      "judgments": [
+        {
+          "judge": "J1",
+          "id": "m4",
+          "score": 0.5,
+          "evidence": "'DNL343 had numerically higher proportions of ... Serious adverse events: 15.1% versus 11.5%' \u2014 states the correct direction contradicting the manuscript's reversed sentence, but does not point out the reversal itself"
+        },
+        {
+          "judge": "J2",
+          "id": "m4",
+          "score": 0.5,
+          "evidence": "Compared with shared placebo, DNL343 had numerically higher proportions of: ... Serious adverse events: 15.1% versus 11.5%"
+        }
+      ],
+      "mean_score": 0.5,
+      "review_path_in_archive": "further_trials/reviews/econtrol_0749.md"
+    },
+    {
+      "review_id": "econtrol_0764",
+      "trial": "P33",
+      "item": "m4",
+      "key": {
+        "id": "m4",
+        "class": "minor",
+        "name": "Word reversal leading to wrong interpretation",
+        "instantiation": "Results text: 'Serious adverse events were numerically less frequent in the DNL343 group than in the shared placebo group (28 participants [15.1%] vs 16 [11.5%])' (direction reversed relative to the numbers).",
+        "detected_if": "Reviewer points out that this sentence has the direction reversed / contradicts the numbers.",
+        "not_enough": ""
+      },
+      "judgments": [
+        {
+          "judge": "J1",
+          "id": "m4",
+          "score": 0.5,
+          "evidence": "'serious adverse events were numerically more frequent with DNL343 than with shared placebo (15.1% vs 11.5%)' \u2014 states the correct direction against the manuscript's claim, but does not point out the reversed Results sentence itself"
+        },
+        {
+          "judge": "J2",
+          "id": "m4",
+          "score": 0.5,
+          "evidence": "However, serious adverse events were numerically more frequent with DNL343 than with shared placebo (15.1% vs 11.5%), and discontinuation due to adverse events was also more frequent (9.7% vs 5.8%)."
+        }
+      ],
+      "mean_score": 0.5,
+      "review_path_in_archive": "further_trials/reviews/econtrol_0764.md"
+    }
+  ],
+  "context_reference_flags": {
+    "historical": 16,
+    "experiment2_reviews": 18,
+    "experiment2_controls": 3
+  },
+  "historical_audit_parser": {
+    "n_actual_audit_rows": 48,
+    "n_rows_found_by_current_parser": 0,
+    "saved_primary_exp1_priming": {}
+  },
+  "explicit_fault_cues": {
+    "included_further_trials": 55,
+    "explicit_itt_not_performed": 55,
+    "custom_instrument_wording": 55
+  },
+  "qualification": "Flagged control categories are not automatically false accusations; synthetic additions are disclosed. Local scoring errors do not establish their prevalence or reversal of main rankings."
+}

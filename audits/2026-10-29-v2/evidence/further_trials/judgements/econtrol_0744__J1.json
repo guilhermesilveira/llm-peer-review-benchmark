@@ -1,0 +1,79 @@
+{
+ "recommendation": "major revision",
+ "scores": [
+  {
+   "id": "M1",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M2",
+   "score": 0,
+   "evidence": "none (only baseline imbalance and pooling concerns: 'the DNL343 group is 55.9% male, the shared placebo group 66.2% male, and baseline serum NfL also differs somewhat')"
+  },
+  {
+   "id": "M3",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M4",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M5",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "M6",
+   "score": 0,
+   "evidence": "none (NfL comment is only about nominal significance: 'a nominal NfL signal in the ECC analysis (P = .03) that was not robust')"
+  },
+  {
+   "id": "M7",
+   "score": 0.5,
+   "evidence": "'This is not warranted from the data presented. The ATE is open-label and uncontrolled ... the conclusion about placebo-controlled duration should be removed or substantially softened' (challenges the duration claim but not the abandon-the-pathway / other-diseases overreach)"
+  },
+  {
+   "id": "M8",
+   "score": 0,
+   "evidence": "none (notes 'regimen-specific placebo sensitivity analysis gives a median DRR of 1.19' but no abstract-vs-results DRR mismatch)"
+  },
+  {
+   "id": "M9",
+   "score": 0,
+   "evidence": "none (reconciles death counts, a different number set: 'These numbers do not line up unless one fatal event occurred after the week-24 placebo-controlled window')"
+  },
+  {
+   "id": "m1",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "m2",
+   "score": 0,
+   "evidence": "none (asks only about 'whether any individual contributed to more than one regimen and how repeated screening/randomization ... was handled')"
+  },
+  {
+   "id": "m3",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "m4",
+   "score": 0.5,
+   "evidence": "'The manuscript states that the \"incidence rates of adverse events were similar\" between groups, but serious adverse events and discontinuations due to adverse events were numerically higher with DNL343. This should be described more precisely.' (notices the text contradicts the numbers but does not point to the reversed Results sentence)"
+  },
+  {
+   "id": "m5",
+   "score": 0,
+   "evidence": "none"
+  }
+ ],
+ "review_word_count_estimate": 850,
+ "judge": "J1",
+ "judge_model": "claude-fable-5",
+ "review_id": "econtrol_0744"
+}

@@ -1,5 +1,11 @@
 # LLM peer review benchmark
 
+## Independent technical audit in this fork
+
+This public fork includes an [independent audit of the v2 study](audits/2026-10-29-v2/REPORT.md), dated 29 October 2026. The report documents specific answer-key scoring conflicts, control-review scoring artifacts, reviewer-context exposure, a historical-audit parser bug, and the scope of the statistical comparisons. It includes source evidence, a verifier requiring only the Python standard library, and saved numerical results.
+
+Start with the [report](audits/2026-10-29-v2/REPORT.md) or the [reproduction instructions](audits/2026-10-29-v2/README.md). The audit targets upstream commit `b05dbde6374c4bdafa1dfc4b5e4b4819f032bc4a` and is attributed separately from the original study.
+
 Code and prompts for **Large language models detect methodological errors that human peer review misses in clinical trials**.
 
 Dominikus Brian and Xavier Isidro Pereira Hernández contributed equally. The other authors are Hao Yin, Jeffrey Koury and Ruslan Rust. The preprint is being prepared for submission.

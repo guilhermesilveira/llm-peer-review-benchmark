@@ -1,0 +1,79 @@
+{
+ "recommendation": "major revision",
+ "scores": [
+  {
+   "id": "M1",
+   "score": 0,
+   "evidence": "none (only: \"Please ensure the final manuscript includes balanced, up-to-date citation of the key adjuvant EGFR-TKI trials\")"
+  },
+  {
+   "id": "M2",
+   "score": 1,
+   "evidence": "\"This is predictable alternation, not a clearly random sequence with allocation concealment. If this is the actual method used, it is a major threat to internal validity and selection bias... If alternation was truly used, I do not think the trial can be considered adequately randomized.\""
+  },
+  {
+   "id": "M3",
+   "score": 0.5,
+   "evidence": "\"Please also explain why 141 patients were randomized despite a planned sample size of 124, and whether the power calculation was updated after the protocol amendment.\""
+  },
+  {
+   "id": "M4",
+   "score": 1,
+   "evidence": "\"The quality-of-life instrument was developed by the investigators for this trial; please provide evidence of validation and explain the basis for the ≥6-point decline threshold.\""
+  },
+  {
+   "id": "M5",
+   "score": 1,
+   "evidence": "\"The manuscript states that DFS and OS were analyzed in the per-protocol set, not the full randomized population... In a randomized phase 3 trial, an intention-to-treat analysis should be presented as the primary or at least a key sensitivity analysis, with clear reasons for exclusion from the PPS by arm.\""
+  },
+  {
+   "id": "M6",
+   "score": 1,
+   "evidence": "\"follow-up was incomplete for a substantial proportion of the PPS ('the remaining 41 patients stopped attending scheduled imaging assessments before any recurrence was documented'). This raises concern about informative censoring and bias.\""
+  },
+  {
+   "id": "M7",
+   "score": 1,
+   "evidence": "\"The conclusions are far too broad and are not supported by the data. The trial did not show an OS benefit (HR 0.84...). ... statements that icotinib 'should replace osimertinib' and that this applies 'worldwide, including those with stage IB disease, non-Asian patients...' are not justified\""
+  },
+  {
+   "id": "M8",
+   "score": 1,
+   "evidence": "\"The abstract reports the primary DFS result as HR 0.40 (95% CI 0.24–0.66; p < 0.001), whereas the Results section reports HR 0.50 (95% CI 0.30–0.82; p = 0.0061) for the same endpoint and population. These values cannot both be correct\""
+  },
+  {
+   "id": "M9",
+   "score": 1,
+   "evidence": "\"The Results section says '147 patients were enrolled and randomly assigned,' but the treatment groups total 141 (68 + 73)... In the safety text, placebo TEAEs are reported as 22/96 rather than 22/69.\""
+  },
+  {
+   "id": "m1",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "m2",
+   "score": 1,
+   "evidence": "\"an intention-to-treat analysis should be presented as the primary or at least a key sensitivity analysis, with clear reasons for exclusion from the PPS by arm\""
+  },
+  {
+   "id": "m3",
+   "score": 0,
+   "evidence": "none"
+  },
+  {
+   "id": "m4",
+   "score": 1,
+   "evidence": "\"The Results section states: 'The 3-year DFS rate was lower in the icotinib group than in the placebo group...' This sentence is reversed; the numbers show the opposite.\""
+  },
+  {
+   "id": "m5",
+   "score": 0,
+   "evidence": "none"
+  }
+ ],
+ "review_word_count_estimate": 900,
+ "judge": "J2",
+ "judge_model": "claude-opus-5",
+ "review_id": "ereview_0689"
+}
